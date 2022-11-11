@@ -1,12 +1,16 @@
 import React from "react";
 import "../styles/App.css";
+import { FontAwesomeIcon, FontawesomeObject } from "@fortawesome/react-fontawesome"
+import { faUser } from "@fortawesome/free-solid-svg-icons"
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons"
+import { faDumbbell } from "@fortawesome/free-solid-svg-icons"
 
 export function Navbar() {
 
     return <div classNameName="container-fluid ">
         <nav className="navbar " id="bg-navbar-1">
             <div className="container-fluid d-flex justify-content-center">
-               <h3>PORTAL GYM</h3> 
+                <h3>PORTAL GYM</h3>  <div className="mb-2" style={{ fontSize: "40px", color: "#0076B8"}} > <FontAwesomeIcon icon={faDumbbell} /></div>
             </div>
         </nav>
         <nav className="navbar" id="bg-navbar-2">
@@ -24,12 +28,12 @@ export function Navbar() {
                         </ul>
                     </div>
 
-                    <button type="button m-5" class="btn btn-secondary">Perfil</button>
+                    <button type="button m-5" class="btn btn-secondary"> <FontAwesomeIcon icon={faUser} />  </button>
 
                 </div>
                 <form className="d-flex" role="search">
                     <input className="form-control me-2" type="search" placeholder="¿Qué desas comprar?" aria-label="Search" />
-                    <button className="btn btn-danger" type="submit">ICONO</button>
+                    <button className="btn btn-secondary" type="submit"> <FontAwesomeIcon icon={faCartShopping} />  </button>
                 </form>
             </div>
         </nav>
