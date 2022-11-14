@@ -6,14 +6,13 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 import { Navbar } from "./components/Navbar"
 import { Footer } from "./components/Footer" 
-
-
+import { Main } from "./views/Main"
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-
+      <Navbar /> 
+      <Main/> 
       <Footer/>
     </div>
   );

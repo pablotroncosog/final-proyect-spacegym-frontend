@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/App.css";
+import "bootstrap/dist/css/bootstrap.min.css"; 
+import 'bootstrap/dist/js/bootstrap.js';
 import { FontAwesomeIcon, FontawesomeObject } from "@fortawesome/react-fontawesome"
 import { faUser } from "@fortawesome/free-solid-svg-icons"
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons"
@@ -10,7 +12,7 @@ export function Navbar() {
     return <div classNameName="container-fluid ">
         <nav className="navbar " id="bg-navbar-1">
             <div className="container-fluid d-flex justify-content-center">
-                <h3>PORTAL GYM</h3>  <div className="mb-2" style={{ fontSize: "40px", color: "#0076B8"}} > <FontAwesomeIcon icon={faDumbbell} /></div>
+                <h3>Space Gym</h3>  <div className="mb-2" style={{ fontSize: "40px", color: "#0076B8"}} > <FontAwesomeIcon icon={faDumbbell} /></div>
             </div>
         </nav>
         <nav className="navbar" id="bg-navbar-2">
