@@ -32,7 +32,7 @@ const Admin = () => {
                 </div>
 
                 <div className="g-4 col-4">
-                    <label for="description" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white  form-label">Descripcion</label>
+                    <label for="description" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white  form-label">Descripcion del Producto</label>
                     <input type="description" className="form-control" id="description"></input>
                 </div>
 
@@ -51,15 +51,206 @@ const Admin = () => {
                 </div>
             </div>
 
-
-            
-
+       
 
 
 
-        </div>
+
+            <div className="row">
+                <div className="g-4 col-2">
+                    <label for="price" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white  form-label">Nombre de Producto</label>
+                </div>
+
+                <div className="g-4 col-2">
+                    <label for="description" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white  form-label">Precio</label>
+                </div>
+
+                <div className="g-4 col-2">
+                    <label for="description" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white  form-label">Clase</label>
+                </div>
+
+                <div className="g-4 col-2">
+                    <label for="description" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white  form-label">Descripcion</label>
+                </div>
+
+                <div className="col-2">
+                    <button type="button" className="btn-sm">Eliminar Producto</button>
+                </div>
+            </div>
 
 
+
+
+
+            <div className="row">
+                <div className="g-4 col-2">
+
+                    <input type="price" className="form-control" id="price"></input>
+                </div>
+
+                <div className="g-4 col-2">
+                    <input type="description" className="form-control" id="description"></input>
+                </div>
+
+                <div className="g-4 col-2">
+                    <input type="description" className="form-control" id="description"></input>
+                </div>
+
+                <div className="g-4 col-2">
+                    <input type="description" className="form-control" id="description"></input>
+                </div>
+
+                <div className="col-2">
+                    <button type="button" className="btn-sm">Editar Producto</button>
+                </div>
+            </div>
+
+
+
+            <div className="row">
+                <div className="g-4 col-12">
+                    <button type="button" className="btn-sm">Usuarios</button>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div className="row">
+                <div className="g-4 col-2">
+                    <label for="price" className="   form-label">Nombre</label>
+                </div>
+
+                <div className="g-4 col-2">
+                    <label for="description" className=" form-label">Celular</label>
+                </div>
+
+                <div className="g-4 col-2">
+                    <label for="description" className="  form-label">Correo</label>
+                </div>
+
+                <div className="g-4 col-2">
+                    <label for="description" className="   form-label">Region</label>
+                </div>
+
+                <div className="g-4 col-2">
+                    <label for="description" className=" form-label">Comuna</label>
+                </div>
+
+
+                <div className="g-4 col-2">
+                    <label for="description" className=" form-label">Calle</label>
+                </div>
+            </div>
+
+
+
+            <div className="row">
+                <div className="g-4 col-2">
+
+                    <input type="price" className="form-control" id="price"></input>
+                </div>
+
+                <div className="g-4 col-2">
+                    <input type="description" className="form-control" id="description"></input>
+                </div>
+
+                <div className="g-4 col-2">
+                    <input type="description" className="form-control" id="description"></input>
+                </div>
+
+                <div className="g-4 col-2">
+                    <input type="description" className="form-control" id="description"></input>
+                </div>
+
+                <div className="g-4 col-2">
+                    <input type="description" className="form-control" id="description"></input>
+                </div>
+
+                <div className="g-4 col-2">
+                    <input type="description" className="form-control" id="description"></input>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div className="row">
+                <div className="g-4 col-2">
+
+                    <input type="price" className="form-control" id="price"></input>
+                </div>
+
+                <div className="g-4 col-2">
+                    <input type="description" className="form-control" id="description"></input>
+                </div>
+
+                <div className="g-4 col-2">
+                    <input type="description" className="form-control" id="description"></input>
+                </div>
+
+                <div className="g-4 col-2">
+                    <input type="description" className="form-control" id="description"></input>
+                </div>
+
+                <div className="g-4 col-2">
+                    <input type="description" className="form-control" id="description"></input>
+                </div>
+
+                <div className="g-4 col-2">
+                    <input type="description" className="form-control" id="description"></input>
+                </div>
+            </div>
+           
+
+
+           
+            <div className="row">
+                <div className="g-4 col-2">
+
+                    <input type="price" className="form-control" id="price"></input>
+                </div>
+
+                <div className="g-4 col-2">
+                    <input type="description" className="form-control" id="description"></input>
+                </div>
+
+                <div className="g-4 col-2">
+                    <input type="description" className="form-control" id="description"></input>
+                </div>
+
+                <div className="g-4 col-2">
+                    <input type="description" className="form-control" id="description"></input>
+                </div>
+
+                <div className="g-4 col-2">
+                    <input type="description" className="form-control" id="description"></input>
+                </div>
+
+                <div className="g-4 col-2">
+                    <input type="description" className="form-control" id="description"></input>
+                </div>
+            </div>
+
+
+
+            <div className="row">
+                <div className="g-4 col-6">
+                    <button type="button" className="btn-sm">Editar</button>
+                </div>
+
+                <div className="g-4 col-6">
+                    <button type="button" className="btn-sm">Eliminar</button>
+                </div>
+            </div>
+
+      
+</div>
 
    
 
