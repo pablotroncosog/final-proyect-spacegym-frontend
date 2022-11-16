@@ -69,11 +69,11 @@ const Admin = () => {
                     <label for="description" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white  form-label">Clase</label>
                 </div>
 
-                <div className="g-4 col-2">
+                <div className="g-4 col-3">
                     <label for="description" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white  form-label">Descripcion</label>
                 </div>
 
-                <div className="col-2">
+                <div className="col-3">
                     <button type="button" className="btn-sm">Eliminar Producto</button>
                 </div>
             </div>
@@ -96,11 +96,11 @@ const Admin = () => {
                     <input type="description" className="form-control" id="description"></input>
                 </div>
 
-                <div className="g-4 col-2">
+                <div className="g-4 col-3">
                     <input type="description" className="form-control" id="description"></input>
                 </div>
 
-                <div className="col-2">
+                <div className="col-3">
                     <button type="button" className="btn-sm">Editar Producto</button>
                 </div>
             </div>
@@ -108,8 +108,8 @@ const Admin = () => {
 
 
             <div className="row">
-                <div className="g-4 col-12">
-                    <button type="button" className="btn-sm">Usuarios</button>
+                <div className="g-4 col-6">
+                    <button type="button" className="btn-sm-usuario">Usuarios</button>
                 </div>
             </div>
 
