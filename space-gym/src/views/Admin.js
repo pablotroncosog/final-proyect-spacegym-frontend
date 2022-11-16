@@ -51,7 +51,7 @@ const Admin = () => {
                 </div>
             </div>
 
-       
+
 
 
 
@@ -206,10 +206,10 @@ const Admin = () => {
                     <input type="description" className="form-control" id="description"></input>
                 </div>
             </div>
-           
 
 
-           
+
+
             <div className="row">
                 <div className="g-4 col-2">
 
@@ -249,174 +249,10 @@ const Admin = () => {
                 </div>
             </div>
 
-      
-</div>
 
-   
-
-        
+        </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* <div className="col-4">
-                <label for="priceInput" className="form-label">Precio</label>
-                <input type="price" className="form-control" id="priceInput" ></input>
-            </div>
-
-            <div className="col-6">
-                <label for="descriptionInput" className="form-label">Descripcion del Producto</label>
-                <input className="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0" type="description" className="form-control" id="descriptionInput" ></input>
-            </div>
-
-            <div className="col-4">
-                <label for="productclassNameInput" className="form-label">Clase del Producto</label>
-                <input type="product" className="form-control" id="productInput" ></input>
-            </div>
-            <div>
-                <button type="button" classNameName="btn-sm">Subir Producto</button>
-            </div>
-
-
-
-
-            <div className="row g-3">
-                <div className="col-2">
-                    <label for="productnameInput" className="form-label">Nombre del Producto</label>
-                    <input type="productnameclassName" className="form-control" id="productnameInput" ></input>
-                </div>
-                <div className="col-2">
-                    <label for="productclassNameInput" className="form-label">Precio</label>
-                    <input type="productclassName" className="form-control" id="productclassNameInput" ></input>
-                </div>
-                <div className="col-2">
-                    <label for="productclassNameInput" className="form-label">Clase</label>
-                    <input type="productclassName" className="form-control" id="productclassNameInput" ></input>
-                </div>
-                <div className="col-2">
-                    <label for="productclassNameInput" className="form-label">Descripcion</label>
-                    <input type="productclassName" className="form-control" id="productclassNameInput" ></input>
-                </div>
-
-                <div className="col-2">
-                    <input type="product" className="form-control" id="productInput" ></input>
-                </div>
-
-
-
-                <div>
-                    <div className="row g-3">
-                        <div className="col-2">
-                            <button className="button" type="button" >Editar Producto</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div className="row g-3">
-                    <div className="col-2">
-                        <label for="productnameInput" className="form-label">Nombre</label>
-                        <input type="productnameclassName" className="form-control" id="productnameInput" ></input>
-                    </div>
-                    <div className="col-2">
-                        <label for="productclassNameInput" className="form-label">Celular</label>
-                        <input type="productclassName" className="form-control" id="productclassNameInput" ></input>
-                    </div>
-                    <div className="col-2">
-                        <label for="productclassNameInput" className="form-label">Correo</label>
-                        <input type="productclassName" className="form-control" id="productclassNameInput" ></input>
-                    </div>
-                    <div className="col-2">
-                        <label for="productclassNameInput" className="form-label">Region</label>
-                        <input type="productclassName" className="form-control" id="productclassNameInput" ></input>
-                    </div>
-                    <div className="col-2">
-                        <label for="productclassNameInput" className="form-label">Calle</label>
-                        <input type="productclassName" className="form-control" id="productclassNameInput" ></input>
-                    </div>
-
-                </div>
-
-
-                <div className="row g-3">
-                    <div className="col-2">
-                        <input type="productclassName" className="form-control" id="productclassNameInput" ></input>
-                    </div>
-                    <div className="col-2">
-                        <input type="productclassName" className="form-control" id="productclassNameInput" ></input>
-                    </div>
-                    <div className="col-2">
-                        <input type="productclassName" className="form-control" id="productclassNameInput" ></input>
-                    </div>
-                    <div className="col-2">
-                        <input type="productclassName" className="form-control" id="productclassNameInput" ></input>
-                    </div>
-                    <div className="col-2">
-                        <input type="productclassName" className="form-control" id="productclassNameInput" ></input>
-                    </div>
-                    <div className="col-2">
-                        <button className="button" type="button" >Editar</button>
-                    </div>
-                </div>
-
-
-
-                <div className="row g-3">
-                    <div className="col-2">
-                        <input type="productclassName" className="form-control" id="productclassNameInput" ></input>
-                    </div>
-                    <div className="col-2">
-                        <input type="productclassName" className="form-control" id="productclassNameInput" ></input>
-                    </div>
-                    <div className="col-2">
-                        <input type="productclassName" className="form-control" id="productclassNameInput" ></input>
-                    </div>
-                    <div className="col-2">
-                        <input type="productclassName" className="form-control" id="productclassNameInput" ></input>
-                    </div>
-                    <div className="col-2">
-                        <input type="productclassName" className="form-control" id="productclassNameInput" ></input>
-                    </div>
-                </div>
-
-
-                <div className="row g-3">
-                    <div className="col-2">
-                        <input type="productclassName" className="form-control" id="productclassNameInput" ></input>
-                    </div>
-                    <div className="col-2">
-                        <input type="productclassName" className="form-control" id="productclassNameInput" ></input>
-                    </div>
-                    <div className="col-2">
-                        <input type="productclassName" className="form-control" id="productclassNameInput" ></input>
-                    </div>
-                    <div className="col-2">
-                        <input type="productclassName" className="form-control" id="productclassNameInput" ></input>
-                    </div>
-                    <div className="col-2">
-                        <input type="productclassName" className="form-control" id="productclassNameInput" ></input>
-                    </div>
-                    <div className="col-2">
-                        <button className="button" type="button" >Eliminar</button>
-                    </div>
-                </div>
-
-
-
-            </div >*/
 
 
     )
