@@ -4,16 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter, Routes, Route, Form } from "react-router-dom";
 import injectContext from "./store/Context.js";
 import Admin from './views/Admin';
-
-function App() {
-  return (
-    <div className="App">
-      <Admin/>
-      
-     
-    </div>
-  );
-}
 import Registration from "./views/Registration";
 
 import { Navbar } from "./components/Navbar"
@@ -27,7 +17,9 @@ function App() {
               <Routes>
                 <Route path="/registration" element={<Registration />}/>
                 <Route path="/" element={<Main/>}/>
+                <Route path="/admin" element={<Admin/>}/>
               </Routes>
+
               <Footer/>
           </BrowserRouter>
 }     
