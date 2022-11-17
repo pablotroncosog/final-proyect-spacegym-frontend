@@ -11,22 +11,22 @@ const Admin = () => {
             <h1>Administracion</h1>
 
             <form className="row g-4 ">
-                <div className="col-4">
+                <div className="col-5">
                     <label for="product" className="p-1 mb-1 bg-secondary bg-opacity-50 text-white form-label">Nombre del Producto</label>
                     <input type="product" className="form-control" id="product" required></input>
                 </div>
 
-                <div className="col-4">
+                <div className="col-5">
                     <label for="image" className="p-1 mb-1 bg-secondary bg-opacity-50 text-white form-label">Imagen de Referencia</label>
                     <input type Submit="image" className="form-control" id="image" required></input>
                 </div>
             </form >
 
 
+
+
             <div className="row">
-                <div className="g-4 col-4">
-
-
+                <div className="g-4 col-5">
                     <label for="price" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white  form-label">Precio</label>
                     <input type="price" className="form-control" id="price"></input>
                 </div>
@@ -36,7 +36,7 @@ const Admin = () => {
                     <input type="description" className="form-control" id="description"></input>
                 </div>
 
-                <div className="col-4">
+                <div className="col-2">
                     <button type="button" className="btn-sm">Subir Producto</button>
                 </div>
             </div>
@@ -45,7 +45,7 @@ const Admin = () => {
 
 
             <div className="row">
-                <div className="g-4 col-4">
+                <div className="g-4 col-5">
                     <label for="productclass" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white form-label">Clase del Producto</label>
                     <input type="productclass" className="form-control" id="productclass"></input>
                 </div>
@@ -58,15 +58,15 @@ const Admin = () => {
 
             <div className="row">
                 <div className="g-4 col-2">
-                    <label for="price" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white  form-label">Nombre de Producto</label>
+                    <label for="nameproduct" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white  form-label">Nombre de Producto</label>
                 </div>
 
                 <div className="g-4 col-2">
-                    <label for="description" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white  form-label">Precio</label>
+                    <label for="price" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white  form-label">Precio</label>
                 </div>
 
                 <div className="g-4 col-2">
-                    <label for="description" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white  form-label">Clase</label>
+                    <label for="type" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white  form-label">Clase</label>
                 </div>
 
                 <div className="g-4 col-3">
@@ -121,28 +121,28 @@ const Admin = () => {
 
             <div className="row">
                 <div className="g-4 col-2">
-                    <label for="price" className="   form-label">Nombre</label>
+                    <label for="name" className="   form-label">Nombre</label>
                 </div>
 
                 <div className="g-4 col-2">
-                    <label for="description" className=" form-label">Celular</label>
+                    <label for="cellphone" className=" form-label">Celular</label>
                 </div>
 
                 <div className="g-4 col-2">
-                    <label for="description" className="  form-label">Correo</label>
+                    <label for="mail" className="  form-label">Correo</label>
                 </div>
 
                 <div className="g-4 col-2">
-                    <label for="description" className="   form-label">Region</label>
+                    <label for="region" className="   form-label">Region</label>
                 </div>
 
                 <div className="g-4 col-2">
-                    <label for="description" className=" form-label">Comuna</label>
+                    <label for="commune" className=" form-label">Comuna</label>
                 </div>
 
 
                 <div className="g-4 col-2">
-                    <label for="description" className=" form-label">Calle</label>
+                    <label for="street" className=" form-label">Calle</label>
                 </div>
             </div>
 
