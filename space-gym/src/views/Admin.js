@@ -45,13 +45,14 @@ const Admin = () => {
                 </div>
 
                 <div className=" g-4 col-4">
-                    <button type="button" className="btn-sm">Subir Producto</button>
+                    <button onClick="" type="button" className="btn-sm">Subir Producto</button>
                 </div>
             </div>
 
 
 
             <div className="row">
+                
                 <div className="g-4 col-4 ">
                     <input type="price" className="form-control" id="price"></input>
                 </div>
@@ -110,7 +111,6 @@ const Admin = () => {
 
             <div className="row">
                 <div className="g-4 col-2">
-
                     <input type="price" className="form-control" id="price"></input>
                 </div>
 
@@ -173,7 +173,6 @@ const Admin = () => {
 
             <div className="row">
                 <div className="g-4 col-2">
-
                     <input type="price" className="form-control" id="price"></input>
                 </div>
 
@@ -204,8 +203,22 @@ const Admin = () => {
 
 
             <div className="row">
-                <div className="g-4 col-2">
 
+                
+
+                <div className="input-group">
+                    <div className="input-group-text">
+                        <input className="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input" ></input>
+                    </div>
+                
+                </div>
+
+
+
+
+
+
+                <div className="g-4 col-2">
                     <input type="price" className="form-control" id="price"></input>
                 </div>
 
