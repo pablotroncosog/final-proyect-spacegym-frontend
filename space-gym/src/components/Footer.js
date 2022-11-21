@@ -52,7 +52,7 @@ export function Footer() {
             </ul>
         </div>
         <div className="col-12 text-light text-center mt-5"> </div>
-    return   <div className="container-fluid" id= "container-footer" >
+   <div className="container-fluid" id= "container-footer" >
     <div className="row mt-4 p-5">
         <div className="col-xs-12 col-md-6 col-lg-3  text-light">
             <p className="h4 "> Sobre nosotros </p>
