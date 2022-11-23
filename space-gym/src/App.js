@@ -3,30 +3,42 @@ import './styles/App.css';
 import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter, Routes, Route, Form } from "react-router-dom";
 import injectContext from "./store/Context.js";
+
+import { Navbar } from "./components/Navbar"
+import { Footer } from "./components/Footer"
+
+import { Main } from "./views/Main"
+import { Offerts } from "./views/Offerts"
+import { Product } from './views/Product';
 import Login from "./views/Login";
 import Admin from './views/Admin';
 import Registration from "./views/Registration";
-import { Navbar } from "./components/Navbar"
-import { Footer } from "./components/Footer" 
-import { Main } from "./views/Main"
 
 function App() {
-  return  <BrowserRouter>
-         <Navbar /> 
-              
-              <Routes>
-                <Route path="/registration" element={<Registration />}/>
-                <Route path="/login" element={<Login />}/>
-                <Route path="/" element={<Main/>}/>
-                <Route path="/admin" element={<Admin/>}/>
-
-              </Routes>
-
-              <Footer/>
-          </BrowserRouter>
-}     
 
 
+  return (
+    <div className="App">
+      <Navbar />
+      <Main />
+      <div className='col-10 g-4 mt-2 p-2'>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Offerts />}> </Route>
+            <Route path='/:id' element={<Product />}> </Route>
+            <Route path="/registration" element={<Registration />}/>
+            <Route path="/login" element={<Login />}/>
+            <Route path="/admin" element={<Admin/>}/>
+          </Routes>
+        </BrowserRouter> 
+        </div>
+      
+      <Footer />
+    </div>
+  );
+}
+
+  
 
 
-export default App;
+export default injectContext(App);

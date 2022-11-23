@@ -7,27 +7,8 @@ import remo from "../images/remo.jpg"
 import aros from "../images/Aros.jpg"
 import MMA from "../images/MMA.jpg"
 import Yoga from "../images/Yoga.jpg"
-import placeholderImg from "../images/placeholder-image.png"
 
 export function Main() {
-
-    let articles = [{
-        img: "https://cdn.shopify.com/s/files/1/0289/4453/1538/products/mancuernas-ironsider-23-96b54dcb-621c-4ca5-aa63-9e0665b3f9d2_b665c580-0ebc-406d-a2a7-8f74f8e91bd7_1024x1024.jpg?v=1659555154",
-        title: "Mancuerna",
-        price: "9.990"
-    }, {
-        img: "https://cdn.shopify.com/s/files/1/0289/4453/1538/products/mancuernas-ironsider-23-96b54dcb-621c-4ca5-aa63-9e0665b3f9d2_b665c580-0ebc-406d-a2a7-8f74f8e91bd7_1024x1024.jpg?v=1659555154",
-        title: "Mancuerna",
-        price: "9.990"
-    }, {
-        img: "https://cdn.shopify.com/s/files/1/0289/4453/1538/products/mancuernas-ironsider-23-96b54dcb-621c-4ca5-aa63-9e0665b3f9d2_b665c580-0ebc-406d-a2a7-8f74f8e91bd7_1024x1024.jpg?v=1659555154",
-        title: "Mancuerna",
-        price: "9.990"
-    }, {
-        img: "",
-        title: "Mancuerna",
-        price: "9.990"
-    }]
 
     return <div className="container-fluid">
         <div className="row">
@@ -67,30 +48,7 @@ export function Main() {
             <div className="col-4 mt-3  mb-2">    <img src={aros} className="d-block w-100 img-fluid " alt="..." />  </div>
             <div className="col-4 mt-3  mb-2">     <img src={MMA} className="d-block w-100 img-fluid  col-4 mt-3  mb-2 " alt="..." />   <img src={Yoga} className="d-block w-100 img-fluid col-4 mt-3  mb-2 " alt="..." />  </div>
             <div className="col-2 mt-3 mb-2">  </div>
-        </div>
-
-        {/* en esta parte creamos las cartas para traer recrusos de la API */}
-        <div class="row">
-            {articles.map((article) => {
-                return (
-                    <div class="col-3 container-fluid d-flex justify-content-center">
-                        <div class="card h-100 img-fluid">
-                            <img src={article.img ? article.img : placeholderImg                           
-                        } class="card-img-center" alt="..." />
-                            <div class="card-body">
-                                <h5 class="card-title text-align-center"> {article.title} </h5>
-                                <p class="card-text text-align-center"> <h3> ${article.price} </h3> </p>
-                            </div>
-                            <div class="card-footer container-fluid d-flex justify-content-center">
-                                <button type="button" class="btn btn-primary btn-lg mx-auto ">Large button</button>
-                            </div>
-                        </div>
-                    </div>
-                )
-            })}
-        </div>
-
-
+        </div>     
     </div>
 };
 
