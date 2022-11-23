@@ -1,11 +1,8 @@
-import React from 'react';
-import './styles/App.css';
-import "bootstrap/dist/css/bootstrap.min.css"
-import injectContext from "./store/Context.js";
 import { BrowserRouter, Routes, Route, Form } from "react-router-dom";
-/* import { BrowserRouter, Routes, Route, Form } from "react-router-dom"; */
-/* import injectContext from "./store/Context.js"; */
-
+import injectContext from "./store/Context.js";
+import Login from "./views/Login";
+import Admin from './views/Admin';
+import Registration from "./views/Registration";
 import { Navbar } from "./components/Navbar"
 import { Footer } from "./components/Footer"
 import { Main } from "./views/Main"
@@ -13,6 +10,7 @@ import { Offerts } from "./views/Offerts"
 import { Product } from './views/Product';
 
 function App() {
+
   return (
     <div className="App">
       <Navbar />
@@ -22,6 +20,9 @@ function App() {
           <Routes>
             <Route path='/' element={<Offerts />}> </Route>
             <Route path='/:id' element={<Product />}> </Route>
+            <Route path="/registration" element={<Registration />}/>
+            <Route path="/login" element={<Login />}/>
+            <Route path="/admin" element={<Admin/>}/>
           </Routes>
         </BrowserRouter> 
         </div>
