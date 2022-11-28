@@ -20,18 +20,17 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Main />
-      <div className='col-10 g-4 mt-2 p-2'>
+    
+      
         <BrowserRouter>
           <Routes>
-            <Route path='/' element={<Offerts />}> </Route>
+            <Route path='/' element={<Main/>}> </Route>
             <Route path='/:id' element={<Product />}> </Route>
             <Route path="/registration" element={<Registration />}/>
             <Route path="/login" element={<Login />}/>
             <Route path="/admin" element={<Admin/>}/>
           </Routes>
         </BrowserRouter> 
-        </div>
       
       <Footer />
     </div>

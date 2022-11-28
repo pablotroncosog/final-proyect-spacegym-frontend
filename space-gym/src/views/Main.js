@@ -7,6 +7,7 @@ import remo from "../images/remo.jpg"
 import aros from "../images/Aros.jpg"
 import MMA from "../images/MMA.jpg"
 import Yoga from "../images/Yoga.jpg"
+import Offerts  from "./Offerts";
 
 export function Main() {
 
@@ -49,7 +50,9 @@ export function Main() {
             <div className="col-4 mt-3  mb-2">     <img src={MMA} className="d-block w-100 img-fluid  col-4 mt-3  mb-2 " alt="..." />   <img src={Yoga} className="d-block w-100 img-fluid col-4 mt-3  mb-2 " alt="..." />  </div>
             <div className="col-2 mt-3 mb-2">  </div>
         </div>     
+        <Offerts/>
     </div>
 };
+
 
 export default Main;

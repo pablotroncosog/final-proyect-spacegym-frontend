@@ -34,7 +34,7 @@ export function Navbar() {
 
                 </div>
                 <form className="d-flex" role="search">
-                    <input className="form-control me-2" type="search" placeholder="¿Qué desas comprar?" aria-label="Search" />
+                    <input className="form-control me-2" type="search" placeholder="¿Qué deseas comprar?" aria-label="Search" />
                     <button className="btn btn-secondary" type="submit"> <FontAwesomeIcon icon={faCartShopping} />  </button>
                 </form>
             </div>
