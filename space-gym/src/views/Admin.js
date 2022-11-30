@@ -2,11 +2,10 @@ import React from "react";
 import '../styles/Admin.css';
 
 const Admin = () => {
-    return (
 
 
-        /*Primer segmento*/
-        <div className="container text-center">
+  
+    return ( <div className="container text-center">
 
             <h1>Administracion</h1>
 
@@ -15,11 +14,19 @@ const Admin = () => {
                     <label for="product" className="p-1 mb-1 bg-secondary bg-opacity-50 text-white form-label">Nombre del Producto</label>
                 </div>
 
-                <div className="g-4 col-4">
-                    <label for="image" className="p-1 mb-1 bg-secondary bg-opacity-50 text-white form-label">Imagen de Referencia</label>
-                </div>
-            </form >
+            
+   
 
+
+
+
+
+
+
+
+
+
+            </form >
 
             <form className="row ">
                 <div className="g-4 col-4">
@@ -30,9 +37,6 @@ const Admin = () => {
                     <input type Submit="image" className="form-control" id="image" required></input>
                 </div>
             </form >
-
-
-
 
 
             <div className="row">
@@ -49,10 +53,8 @@ const Admin = () => {
                 </div>
             </div>
 
-
-
             <div className="row">
-                
+
                 <div className="g-4 col-4 ">
                     <input type="price" className="form-control" id="price"></input>
                 </div>
@@ -62,26 +64,17 @@ const Admin = () => {
                 </div>
             </div>
 
-
-
             <div className="row">
                 <div className="g-4 col-4">
                     <label for="productclass" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white form-label">Clase del Producto</label>
                 </div>
             </div>
 
-
-
             <div className="row">
                 <div className="g-4 col-4">
                     <input type="productclass" className="form-control" id="productclass"></input>
                 </div>
             </div>
-
-
-
-
-
 
             <div className="row">
                 <div className="g-4 col-2">
@@ -106,9 +99,6 @@ const Admin = () => {
 
             </div>
 
-
-
-
             <div className="row">
                 <div className="g-4 col-2">
                     <input type="price" className="form-control" id="price"></input>
@@ -131,16 +121,11 @@ const Admin = () => {
                 </div>
             </div>
 
-
-
             <div className="row">
                 <div className="g-4-col-6 mx-auto">
                     <button type="button" className="btn-sm-usuario">Usuarios</button>
                 </div>
             </div>
-
-
-
 
             <div className="row">
                 <div className="g-4 col-2">
@@ -163,12 +148,10 @@ const Admin = () => {
                     <label for="commune" className=" form-label">Comuna</label>
                 </div>
 
-
                 <div className="g-4 col-2">
                     <label for="street" className=" form-label">Calle</label>
                 </div>
             </div>
-
 
 
             <div className="row">
@@ -196,9 +179,6 @@ const Admin = () => {
                     <input type="description" className="form-control" id="description"></input>
                 </div>
             </div>
-
-
-
 
 
 
@@ -274,10 +254,8 @@ const Admin = () => {
 
         </div>
 
-
-
-
     )
-};
+}
+
 
 export default Admin; 
