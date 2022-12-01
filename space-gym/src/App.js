@@ -13,6 +13,7 @@ import { Product } from './views/Product';
 import Login from "./views/Login";
 import Admin from './views/Admin';
 import Registration from "./views/Registration";
+import Account from './views/Account';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
             <Route path="/registration" element={<Registration />}/>
             <Route path="/login" element={<Login />}/>
             <Route path="/admin" element={<Admin/>}/>
+            <Route path="/account" element={<Account/>}/>
           </Routes>
         </BrowserRouter> 
       
