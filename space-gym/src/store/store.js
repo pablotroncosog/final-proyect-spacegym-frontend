@@ -4,6 +4,7 @@ export const getState = ({ getActions, getStore, setStore}) => {
         store: {
            products: [],
            users: [],
+           admin: [],
         },
         actions: {
             getCharacters: () => {
@@ -14,9 +15,25 @@ export const getState = ({ getActions, getStore, setStore}) => {
               }))
               .catch(error => console.log(error))
             },
-            getUsers: () => {
+            getUsers: () => { 
+              fetch("https://8080-pablotronco-finalproyec-r5i5o0okka4.ws-us77.gitpod.io/admin")
+              .then((response) => response.json())
+              .then(data => setStore({
+                admin: data,
+              }))
+              .catch(error => console.log(error))
                 
-            }
+            },
+            getUsers: () => { 
+              fetch("https://8080-pablotronco-finalproyec-r5i5o0okka4.ws-us77.gitpod.io/admin")
+              .then((response) => response.json())
+              .then(data => setStore({
+                admin: data,
+              }))
+              .catch(error => console.log(error))
+                
+            },
+            
         }
 
     }

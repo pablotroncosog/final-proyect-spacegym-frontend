@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import {Context} from "../strore/Context";
 import '../styles/Admin.css';
 
+
 const Admin = () => {
+    const { store,action } = useContext (Context)
+    store.
+
+
+
+
     return (
 
 
