@@ -6,6 +6,7 @@ import { FontAwesomeIcon, FontawesomeObject } from "@fortawesome/react-fontaweso
 import { faUser } from "@fortawesome/free-solid-svg-icons"
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons"
 import { faDumbbell } from "@fortawesome/free-solid-svg-icons"
+import { Link } from "react-router-dom";
 
 export function Navbar() {
 
