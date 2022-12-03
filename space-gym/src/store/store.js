@@ -40,7 +40,25 @@ export const getState = ({ getActions, getStore, setStore}) => {
               .catch(error => console.log(error))
 
                 
+            },
+            postRegistration: (dataUsers) => { 
+
+              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us77.gitpod.io/registration", {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json'
+                  
+                },
+                body: JSON.stringify(dataUsers) } )
+              .then((response) => response.json())
+              .then(data => setStore({
+                dataUsers: data,
+              }))
+              .catch(error => console.log(error))
+
+                
             }
+
 
         }
         
