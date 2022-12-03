@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+.App {
+    background-color:  #ffffff;
+  }
+>>>>>>> 4872d0904e4779cb1c9e60e2a38835260f438594
   
   .Auth-form-container {
     display: flex;
@@ -39,6 +45,55 @@
     color: rgb(34, 34, 34);
   }
   .btn {
-    background-color: #D1FFF4;
+    background-color: #797979;
     font-size: 20px;
   }
+
+.container-profile {
+  margin: auto;
+  padding: auto;
+}
+
+.button-edit {
+  margin-top: 80%;
+  background-color: #D1FFF4 ;
+  color: black;
+  border-radius: 5px;
+  border: #797979;
+  height: 50px;
+  width: 80px;
+  box-shadow: 1px 1px 1px rgb(0, 0, 0);
+  cursor: pointer;
+}
+.button-edit:hover {
+  background: cyan;
+}
+
+.button-details {
+  margin-top: 60%;
+  background-color: #D1FFF4 ;
+  color: black;
+  border-radius: 5px;
+  border: #797979;
+  height: 50px;
+  width: 80px;
+  box-shadow: 1px 1px 1px rgb(0, 0, 0);
+  cursor: pointer;
+}
+.button-details:hover {
+  background: cyan;
+}
+.button-history {
+  margin-left: 40%;
+  background-color: #D1FFF4 ;
+  color: black;
+  border-radius: 5px;
+  border: #797979;
+  height: 50px;
+  width: 200px;
+  box-shadow: 1px 1px 1px rgb(0, 0, 0);
+  cursor: pointer;
+}
+.button-history:hover {
+  background: cyan;
+}

@@ -25,17 +25,20 @@ export function Navbar() {
                             Menú
                         </button>
                         <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="/">Action</a></li>
-                            <li><a className="dropdown-item" href="/">Another action</a></li>
-                            <li><a className="dropdown-item" href="/">Something else here</a></li>
+                            <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/"> Menú principal </a></li>
+                            <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/registration"> Crear usuario </a></li>
+                            <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/login"> Iniciar sesion </a></li>
+                            <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/account"> Mi cuenta </a></li>
+                            <li><div class="dropdown-divider"> </div> </li>
+                            <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/admin"> Admin</a></li>
                         </ul>
                     </div>
 
-                    <button type="button m-5" class="btn btn-secondary"> <FontAwesomeIcon icon={faUser} />  </button>
+                    <button type="button m-5" class="btn btn-secondary" > <FontAwesomeIcon icon={faUser} />  </button>
 
                 </div>
                 <form className="d-flex" role="search">
-                    <input className="form-control me-2" type="search" placeholder="¿Qué desas comprar?" aria-label="Search" />
+                    <input className="form-control me-2" type="search" placeholder="¿Qué deseas comprar?" aria-label="Search" />
                     <button className="btn btn-secondary" type="submit"> <FontAwesomeIcon icon={faCartShopping} />  </button>
                 </form>
             </div>

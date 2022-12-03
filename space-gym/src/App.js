@@ -13,6 +13,7 @@ import { Product } from './views/Product';
 import Login from "./views/Login";
 import Admin from './views/Admin';
 import Registration from "./views/Registration";
+import Account from './views/Account';
 
 
 function App() {
@@ -21,18 +22,18 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Main />
-      <div className='col-10 g-4 mt-2 p-2'>
+    
+      
         <BrowserRouter>
           <Routes>
-            <Route path='/' element={<Offerts />}> </Route>
+            <Route path='/' element={<Main/>}> </Route>
             <Route path='/:id' element={<Product />}> </Route>
             <Route path="/registration" element={<Registration />}/>
             <Route path="/login" element={<Login />}/>
             <Route path="/admin" element={<Admin/>}/>
+            <Route path="/account" element={<Account/>}/>
           </Routes>
         </BrowserRouter> 
-        </div>
       
       <Footer />
     </div>
