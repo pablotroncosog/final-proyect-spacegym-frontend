@@ -27,12 +27,9 @@ const Registration = () => {
 
     return (
             <><h1>Registro</h1><div className="container">
-<<<<<<< HEAD
-        <form className="row g-3"  id="container-main">
-=======
-        <form onSubmit= { submitRegistration } className="row g-3 ">
        
->>>>>>> 25fe99f3aacb2bf119127e26dd52a27399ff4269
+        <form onSubmit= { submitRegistration } className="row g-3 " id="container-main">
+       
 
           <div className="col-6">
             <label form="nameInput" class="form-label"></label>
