@@ -4,7 +4,7 @@ import '../styles/Registration.css';
 const Registration = () => {
     return (
             <><h1>Registro</h1><div className="container">
-        <form className="row g-3 ">
+        <form className="row g-3"  id="container-main">
 
           <div className="col-6">
             <label form="nameInput" class="form-label"></label>
