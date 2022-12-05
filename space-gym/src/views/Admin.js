@@ -27,7 +27,7 @@ const Admin = () => {
 
 
     return (
-        <><p className="h1 text-center">Administración</p><div className="row g-3 align-items-center">
+        <><p className="h1 text-center">Administración</p><div className="row g-3 align-items-center" id="container-main">
             <div className="col-md-6">
           
                     <button type="button" class="btn" data-bs-toggle="button">Nombre de Producto</button>
@@ -38,7 +38,7 @@ const Admin = () => {
        
             <div className="col-md-6">
                 <div className="card mb-3 m-auto" >
-                    <form onSubmit={handleSubmit} className="row">
+                    <form onSubmit={handleSubmit} className="row" id="container-main-2">
                         <label for="kettlebell">Imagen de referencia:</label>
                         <input
                             type="file"
@@ -82,7 +82,7 @@ const Admin = () => {
        <button type="button" class="btn-editar" data-bs-toggle="button">Usuarios</button>
        </div>
 
-       <div className="row">
+       <div className="row" id="container-main-3">
             <div className="g-4 col-2">
                 <button type="button" class="btn" data-bs-toggle="button">Nombre del producto</button>
             </div>
@@ -99,7 +99,7 @@ const Admin = () => {
                 <button type="button" class="btn" data-bs-toggle="button">Descripción</button>
             </div>
         </div>    
-    <div className="row">
+    <div className="row"  id="container-main-4">
         <div className="g-4 col-2">
             <input type="price" className="form-control" id="price"></input>
         </div>
@@ -117,7 +117,7 @@ const Admin = () => {
         </div>
     </div>
 
-    <div className="row">
+    <div className="row"  id="container-main-5">
                 <div className="g-4 col-2">
                     <label for="name" className="   form-label">Nombre</label>
                 </div>
@@ -144,7 +144,7 @@ const Admin = () => {
                 </div>
             </div>
 
-    <div className="row">
+    <div className="row"  id="container-main-6">
     <div className="g-4 col-2">
         <input type="price" className="form-control" id="price"></input>
     </div>
@@ -169,7 +169,7 @@ const Admin = () => {
         <input type="description" className="form-control" id="description"></input>
     </div>
     </div>
-    <div className="row">
+    <div className="row"  id="container-main-7" >
     <div className="g-4 col-2">
         <input type="price" className="form-control" id="price"></input>
     </div>
@@ -194,7 +194,7 @@ const Admin = () => {
         <input type="description" className="form-control" id="description"></input>
     </div>
     </div>
-    <div className="row">
+    <div className="row" id="container-main-8" >
     <div className="g-4 col-2">
         <input type="price" className="form-control" id="price"></input>
     </div>

@@ -14,7 +14,7 @@ import Login from "./views/Login";
 import Admin from './views/Admin';
 import Registration from "./views/Registration";
 import Account from './views/Account';
-
+import Shopping from './views/Shopping';
 
 function App() {
 
@@ -34,6 +34,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/account" element={<Account />} />
+          <Route path="/shopping" element={<Shopping/>} />
         </Routes>
       </BrowserRouter>
 
