@@ -1,148 +1,123 @@
-import React from "react";
+import React, { useState } from "react";
 import '../styles/Admin.css';
 
+
 const Admin = () => {
+    const [inputFiles, setInputFiles] = useState(null);
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        const formData = new FormData();
+        formData.append("file", inputFiles[0]);
+        console.log(formData.get("file"));
+        fetch(
+            "https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us77.gitpod.io/upload_image",
+            {
+                method: "POST",
+                body: formData,
+            }
+        )
+            .then((res) => res.json())
+            .then((data) => console.log(data))
+            .catch((error) => console.log(error));
+
+    };
+    const handleChange = (e) => {
+        setInputFiles(e.target.files);
+    };
+
+
     return (
-
-
-        /*Primer segmento*/
-        <div className="container text-center">
-
-            <h1>Administracion</h1>
-
-            <form className="row">
-                <div className="g-4 col-4">
-                    <label for="product" className="p-1 mb-1 bg-secondary bg-opacity-50 text-white form-label">Nombre del Producto</label>
-                </div>
-
-                <div className="g-4 col-4">
-                    <label for="image" className="p-1 mb-1 bg-secondary bg-opacity-50 text-white form-label">Imagen de Referencia</label>
-                </div>
-            </form >
-
-
-            <form className="row ">
-                <div className="g-4 col-4">
-                    <input type="product" className="form-control" id="product" required></input>
-                </div>
-
-                <div className="g-4 col-4">
-                    <input type Submit="image" className="form-control" id="image" required></input>
-                </div>
-            </form >
-
-
-
-
-
-            <div className="row">
-                <div className="g-4 col-4">
-                    <label for="price" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white  form-label">Precio</label>
-                </div>
-
-                <div className="g-4 col-4">
-                    <label for="description" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white  form-label">Descripcion del Producto</label>
-                </div>
-
-                <div className=" g-4 col-4">
-                    <button onClick="" type="button" className="btn-sm">Subir Producto</button>
+        <><p className="h1 text-center">Administración</p><div className="row g-3 align-items-center">
+            <div className="col-md-6">
+          
+                    <button type="button" class="btn" data-bs-toggle="button">Nombre de Producto</button>
+              
+                <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline">
+                </input>
+            </div>
+       
+            <div className="col-md-6">
+                <div className="card mb-3 m-auto" >
+                    <form onSubmit={handleSubmit} className="row">
+                        <label for="kettlebell">Imagen de referencia:</label>
+                        <input
+                            type="file"
+                            id="barra"
+                            name="barra"
+                            onChange={handleChange}
+                            accept="image/png, image/jpeg"></input>
+                        <button className="btn" type="submit">Upload</button>
+                    </form>
                 </div>
             </div>
 
-
-
-            <div className="row">
-                
-                <div className="g-4 col-4 ">
-                    <input type="price" className="form-control" id="price"></input>
+            <div className="col-md-6">
+               
+               <button type="button" class="btn" data-bs-toggle="button">Precio</button>
+         
+           <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline">
+           </input>
+       </div>
+       <div className="col-md-6">          
+            <div class="my-8 mb-3">
+                    <button type="button" class="btn btn-lg" data-bs-toggle="button">Descripción de producto</button>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
+       </div>
+       <div className="col-md-6">
+               
+               <button type="button" class="btn" data-bs-toggle="button">Clase de Producto</button>
+         
+           <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline">
+           </input>
+       </div>
+       <div className="col-md-6">
+              <button type="button" class="btn-editar" data-bs-toggle="button">Subir Producto</button>
+              <button type="button" class="btn-editar" data-bs-toggle="button">Eliminar Producto</button>
+              <button type="button" class="btn-editar" data-bs-toggle="button">Editar Producto</button>
+            
 
-                <div className="g-4 col-4">
-                    <input type="description" className=" input-group-lg form-control" id="description"></input>
-                </div>
+       </div>
+       <div className="col-lg-12">
+       <button type="button" class="btn-editar" data-bs-toggle="button">Usuarios</button>
+       </div>
+
+       <div className="row">
+            <div className="g-4 col-2">
+                <button type="button" class="btn" data-bs-toggle="button">Nombre del producto</button>
             </div>
 
-
-
-            <div className="row">
-                <div className="g-4 col-4">
-                    <label for="productclass" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white form-label">Clase del Producto</label>
-                </div>
+            <div className="g-4 col-2">
+                <button type="button" class="btn" data-bs-toggle="button">Precio</button>
             </div>
 
-
-
-            <div className="row">
-                <div className="g-4 col-4">
-                    <input type="productclass" className="form-control" id="productclass"></input>
-                </div>
+            <div className="g-4 col-2">
+                <button type="button" class="btn" data-bs-toggle="button">Clase</button>
             </div>
 
-
-
-
-
-
-            <div className="row">
-                <div className="g-4 col-2">
-                    <label for="nameproduct" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white  form-label">Nombre de Producto</label>
-                </div>
-
-                <div className="g-4 col-2">
-                    <label for="price" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white  form-label">Precio</label>
-                </div>
-
-                <div className="g-4 col-2">
-                    <label for="type" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white  form-label">Clase</label>
-                </div>
-
-                <div className="g-4 col-3">
-                    <label for="description" className=" p-1 mb-1 bg-secondary bg-opacity-50 text-white  form-label">Descripcion</label>
-                </div>
-
-                <div className="col-3">
-                    <button type="button" className="btn-sm">Eliminar Producto</button>
-                </div>
-
+            <div className="g-4 col-3">
+                <button type="button" class="btn" data-bs-toggle="button">Descripción</button>
             </div>
+        </div>    
+    <div className="row">
+        <div className="g-4 col-2">
+            <input type="price" className="form-control" id="price"></input>
+        </div>
 
+        <div className="g-4 col-2">
+            <input type="description" className="form-control" id="description"></input>
+        </div>
 
+        <div className="g-4 col-2">
+            <input type="description" className="form-control" id="description"></input>
+        </div>
 
+        <div className="g-4 col-2">
+            <input type="description" className="form-control" id="description"></input>
+        </div>
+    </div>
 
-            <div className="row">
-                <div className="g-4 col-2">
-                    <input type="price" className="form-control" id="price"></input>
-                </div>
-
-                <div className="g-4 col-2">
-                    <input type="description" className="form-control" id="description"></input>
-                </div>
-
-                <div className="g-4 col-2">
-                    <input type="description" className="form-control" id="description"></input>
-                </div>
-
-                <div className="g-4 col-3">
-                    <input type="description" className="form-control" id="description"></input>
-                </div>
-
-                <div className="g-4 col-3">
-                    <button type="button" className="btn-sm">Editar Producto</button>
-                </div>
-            </div>
-
-
-
-            <div className="row">
-                <div className="g-4-col-6 mx-auto">
-                    <button type="button" className="btn-sm-usuario">Usuarios</button>
-                </div>
-            </div>
-
-
-
-
-            <div className="row">
+    <div className="row">
                 <div className="g-4 col-2">
                     <label for="name" className="   form-label">Nombre</label>
                 </div>
@@ -169,115 +144,88 @@ const Admin = () => {
                 </div>
             </div>
 
+    <div className="row">
+    <div className="g-4 col-2">
+        <input type="price" className="form-control" id="price"></input>
+    </div>
 
+    <div className="g-4 col-2">
+        <input type="description" className="form-control" id="description"></input>
+    </div>
 
-            <div className="row">
-                <div className="g-4 col-2">
-                    <input type="price" className="form-control" id="price"></input>
-                </div>
+    <div className="g-4 col-2">
+        <input type="description" className="form-control" id="description"></input>
+    </div>
 
-                <div className="g-4 col-2">
-                    <input type="description" className="form-control" id="description"></input>
-                </div>
+    <div className="g-4 col-2">
+        <input type="description" className="form-control" id="description"></input>
+    </div>
 
-                <div className="g-4 col-2">
-                    <input type="description" className="form-control" id="description"></input>
-                </div>
+    <div className="g-4 col-2">
+        <input type="description" className="form-control" id="description"></input>
+    </div>
 
-                <div className="g-4 col-2">
-                    <input type="description" className="form-control" id="description"></input>
-                </div>
+    <div className="g-4 col-2">
+        <input type="description" className="form-control" id="description"></input>
+    </div>
+    </div>
+    <div className="row">
+    <div className="g-4 col-2">
+        <input type="price" className="form-control" id="price"></input>
+    </div>
 
-                <div className="g-4 col-2">
-                    <input type="description" className="form-control" id="description"></input>
-                </div>
+    <div className="g-4 col-2">
+        <input type="description" className="form-control" id="description"></input>
+    </div>
 
-                <div className="g-4 col-2">
-                    <input type="description" className="form-control" id="description"></input>
-                </div>
-            </div>
+    <div className="g-4 col-2">
+        <input type="description" className="form-control" id="description"></input>
+    </div>
 
+    <div className="g-4 col-2">
+        <input type="description" className="form-control" id="description"></input>
+    </div>
 
+    <div className="g-4 col-2">
+        <input type="description" className="form-control" id="description"></input>
+    </div>
 
+    <div className="g-4 col-2">
+        <input type="description" className="form-control" id="description"></input>
+    </div>
+    </div>
+    <div className="row">
+    <div className="g-4 col-2">
+        <input type="price" className="form-control" id="price"></input>
+    </div>
 
+    <div className="g-4 col-2">
+        <input type="description" className="form-control" id="description"></input>
+    </div>
 
+    <div className="g-4 col-2">
+        <input type="description" className="form-control" id="description"></input>
+    </div>
 
-            <div className="row">
+    <div className="g-4 col-2">
+        <input type="description" className="form-control" id="description"></input>
+    </div>
 
-                <div className="g-4 col-2">
-                    <input type="price" className="form-control" id="price"></input>
-                </div>
+    <div className="g-4 col-2">
+        <input type="description" className="form-control" id="description"></input>
+    </div>
 
-                <div className="g-4 col-2">
-                    <input type="description" className="form-control" id="description"></input>
-                </div>
-
-                <div className="g-4 col-2">
-                    <input type="description" className="form-control" id="description"></input>
-                </div>
-
-                <div className="g-4 col-2">
-                    <input type="description" className="form-control" id="description"></input>
-                </div>
-
-                <div className="g-4 col-2">
-                    <input type="description" className="form-control" id="description"></input>
-                </div>
-
-                <div className="g-4 col-2">
-                    <input type="description" className="form-control" id="description"></input>
-                </div>
-            </div>
-
-
-
-
-            <div className="row">
-                <div className="g-4 col-2">
-
-                    <input type="price" className="form-control" id="price"></input>
-                </div>
-
-                <div className="g-4 col-2">
-                    <input type="description" className="form-control" id="description"></input>
-                </div>
-
-                <div className="g-4 col-2">
-                    <input type="description" className="form-control" id="description"></input>
-                </div>
-
-                <div className="g-4 col-2">
-                    <input type="description" className="form-control" id="description"></input>
-                </div>
-
-                <div className="g-4 col-2">
-                    <input type="description" className="form-control" id="description"></input>
-                </div>
-
-                <div className="g-4 col-2">
-                    <input type="description" className="form-control" id="description"></input>
-                </div>
-            </div>
-
-
-
-            <div className="row d-grid gap-2 d-md-flex justify-content-md-end">
-                <div className="g-4 col-6">
-                    <button type="button" className="btn-sm">Editar</button>
-                </div>
-
-                <div className="g-4 col-6">
-                    <button type="button" className="btn-sm">Eliminar</button>
-                </div>
-            </div>
-
-
+    <div className="g-4 col-2">
+        <input type="description" className="form-control" id="description"></input>
+    </div>
+    </div>
         </div>
+        </>
 
 
+   )
+                
+    }
 
-
-    )
-};
-
-export default Admin; 
+ export default Admin;
+            
