@@ -32,7 +32,6 @@ export function Navbar() {
                                     <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/"> Menú principal </a></li>
                                     <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/registration"> Crear usuario </a></li>
                                     <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/login"> Iniciar sesion </a></li>
-                                    <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/account"> Mi cuenta </a></li>
                                     <li><div class="dropdown-divider"> </div> </li>
                                     <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/admin"> Admin</a></li>
                                 </ul>
@@ -46,7 +45,7 @@ export function Navbar() {
             <div className="col-lg-1 col-xs-12 col-md-6">
                 <div className="mt-2">
                     <div className="m-auto d-flex justify-content-center">
-                        <button type="button m-5" class="btn btn-secondary" > <FontAwesomeIcon icon={faUser} />  </button>
+                   <a href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/account">  <button type="button m-5" class="btn btn-secondary" > <FontAwesomeIcon icon={faUser} />  </button> </a>
                     </div>
                 </div>
             </div>
@@ -56,18 +55,20 @@ export function Navbar() {
             </div>
 
             <div className="col-lg-2 col-xs-12 col-md-6">
-                <div className="mt-2 margin-right-5" >
+                <div className="mt-2" >
+                    <div className="mx-auto">
                     <form role="search">
                         <input className="form-control me-2" type="search" placeholder="¿Qué deseas comprar?" aria-label="Search" />
                     </form>
                 </div>
+                </div> 
 
             </div>
 
             <div className="col-lg-1 col-xs-12 col-md-6">
-                <div className="mt-2">
+                <div className="mt-2">  
                     <div className="d-flex justify-content-center">
-                        <button className="btn btn-secondary" type="submit"> <FontAwesomeIcon icon={faCartShopping} /> </button>
+                    <a class="btn btn-primary" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/shopping" role="button"> <FontAwesomeIcon icon={faCartShopping} /> </a>
                     </div>
                 </div>
             </div>
