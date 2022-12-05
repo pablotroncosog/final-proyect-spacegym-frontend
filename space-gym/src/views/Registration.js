@@ -27,7 +27,8 @@ const Registration = () => {
 
     return (
             <><h1>Registro</h1><div className="container">
-        <form onSubmit= { submitRegistration } className="row g-3 ">
+       
+        <form onSubmit= { submitRegistration } className="row g-3 " id="container-main">
        
 
           <div className="col-6">

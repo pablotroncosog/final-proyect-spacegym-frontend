@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/Login.css';
+import '../styles/Account.css';
 
 
 const Account = () => {
@@ -7,7 +7,7 @@ const Account = () => {
         <div className="container-fluid">
 
             <table class="table table-borderless mt-4">
-                <div className="row">
+                <div className="row" id="container-main">
                     <div className="col-4 d-flex justify-content-center">
                         <div className="mt-5">  <button className="button-edit"> Editar </button>  </div>
                     </div>
@@ -33,7 +33,7 @@ const Account = () => {
 
 
             <div className="container-fluid justify-content-center">
-                <div className="row">
+                <div className="row" id="container-main-2">
                     <div className="col-12 d-flex justify-content-around">
                         <div><h4>Número de orden </h4><input type="description" className="form-control" ></input></div>
                         <div><h4>Fecha de orden </h4><input type="description" className="form-control" ></input></div>
@@ -44,7 +44,7 @@ const Account = () => {
                 </div>
             </div>
 
-            <div class="d-grid gap-2 col-6 mx-auto">
+            <div class="d-grid gap-2 col-6 mx-auto mb-1">
                 <button class="button-history" type="button">Ver todas las ordenes</button>
            
             </div>

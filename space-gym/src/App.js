@@ -21,26 +21,28 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
-    
-      
-        <BrowserRouter>
-          <Routes>
-            <Route path='/' element={<Main/>}> </Route>
-            <Route path='/:id' element={<Product />}> </Route>
-            <Route path="/registration" element={<Registration />}/>
-            <Route path="/login" element={<Login />}/>
-            <Route path="/admin" element={<Admin/>}/>
-            <Route path="/account" element={<Account/>}/>
-          </Routes>
-        </BrowserRouter> 
-      
+      <div className='row'>
+        <div className='col-12'>
+          <Navbar />
+        </div>
+      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Main />}> </Route>
+          <Route path='/:id' element={<Product />}> </Route>
+          <Route path="/registration" element={<Registration />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/account" element={<Account />} />
+        </Routes>
+      </BrowserRouter>
+
       <Footer />
     </div>
   );
 }
 
-  
+
 
 
 export default injectContext(App);
