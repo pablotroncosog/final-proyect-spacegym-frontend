@@ -26,12 +26,27 @@ export function Admin() {
         setInputFiles(e.target.files);
     };
 
+    
+ 
+
 
     return (
-        <><p className="h1 text-center">Administración</p><div className="row g-3 align-items-center" id="container-main">
-            <div className="col-md-6">
+        <><h1>Publicar Aviso</h1><div className="container"></div>
+
+      <div className="row g-3 align-items-center" id="container-main">
+
+
+            <div className="col-12">
+            <label form="nameInput" class="form-label"></label>
+            <input type="text" class="form-control" id="ninput" placeholder="Nombre del Producto" name="name"></input>
+          </div>
+
+          <div className="col-12">
+            <label form="nameInput" class="form-label"></label>
+            <input type="text" class="form-control" id="ninput" placeholder="Precio" name="street"></input>
+          </div>
           
-                    <button type="button" class="btn" data-bs-toggle="button">Nombre de Producto</button>
+        
               
                 <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline">
                 </input>
@@ -47,14 +62,13 @@ export function Admin() {
                             name="barra"
                             onChange={handleChange}
                             accept="image/png, image/jpeg"></input>
-                        <button className="btn" type="submit">Upload</button>
+                        <button className="btn" type="submit">Subir Imagen</button>
                     </form>
                 </div>
             </div>
 
             <div className="col-md-6">
                
-               <button type="button" class="btn" data-bs-toggle="button">Precio</button>
          
            <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline">
            </input>
@@ -79,7 +93,6 @@ export function Admin() {
             
     </div>
  
-        </div>
         </>
 
 
