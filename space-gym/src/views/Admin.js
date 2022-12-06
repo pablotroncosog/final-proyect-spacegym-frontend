@@ -26,79 +26,90 @@ export function Admin() {
         setInputFiles(e.target.files);
     };
 
-    
- 
+
+
 
 
     return (
-        <><h1>Publicar Aviso</h1><div className="container"></div>
+        <div className="container">
+            <div class="my-8 mb-5">
+            <><h1>Publicar Aviso</h1><div className="container"></div>
 
-      <div className="row g-3 align-items-center" id="container-main">
-
-
-            <div className="col-12">
-            <label form="nameInput" class="form-label"></label>
-            <input type="text" class="form-control" id="ninput" placeholder="Nombre del Producto" name="name"></input>
-          </div>
-
-          <div className="col-12">
-            <label form="nameInput" class="form-label"></label>
-            <input type="text" class="form-control" id="ninput" placeholder="Precio" name="street"></input>
-          </div>
-          
-        
-              
-                <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline">
-                </input>
-            </div>
-       
-            <div className="col-md-6">
-                <div className="card mb-3 m-auto" >
-                    <form onSubmit={handleSubmit} className="row" id="container-main-2">
-                        <label for="kettlebell">Imagen de referencia:</label>
-                        <input
-                            type="file"
-                            id="barra"
-                            name="barra"
-                            onChange={handleChange}
-                            accept="image/png, image/jpeg"></input>
-                        <button className="btn" type="submit">Subir Imagen</button>
-                    </form>
-                </div>
-            </div>
-
-            <div className="col-md-6">
-               
-         
-           <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline">
-           </input>
-       </div>
-       <div className="col-md-6">          
-            <div class="my-8 mb-3">
-                    <button type="button" class="btn btn-lg" data-bs-toggle="button">Descripción de producto</button>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-       </div>
-       <div className="col-md-6">
-               
-               <button type="button" class="btn" data-bs-toggle="button">Clase de Producto</button>
-         
-           <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline">
-           </input>
-       </div>
-       <div className="col-md-6">
-              <button type="button" class="btn-editar" data-bs-toggle="button">Subir Producto</button>
-              <button type="button" class="btn-editar" data-bs-toggle="button">Eliminar Producto</button>
-              <button type="button" class="btn-editar" data-bs-toggle="button">Editar Producto</button>
-            
-    </div>
- 
-        </>
-
-
-   )
                 
-    }
 
- export default Admin;
-            
+
+                    <div className="col-12">
+                        <label form="nameInput" class="form-label"></label>
+                        <input type="text" class="form-control" id="ninput" placeholder="Nombre del Producto" name="name"></input>
+                    </div>
+
+                    <div className="col-12">
+                        <label form="nameInput" class="form-label"></label>
+                        <input type="text" class="form-control" id="ninput" placeholder="Precio" name="street"></input>
+                    </div>
+              
+
+                <div className="col-md-12">
+                    <div className="card mb-5 m-auto" >
+                        <form onSubmit={handleSubmit} className="row" id="container-main-2">
+                            <label for="kettlebell">Imagen de referencia:</label>
+                            <input
+                                type="file"
+                                id="barra"
+                                name="barra"
+                                onChange={handleChange}
+                                accept="image/png, image/jpeg"></input>
+                            <button className="btn" type="submit">Subir Imagen</button>
+                        </form>
+                    </div>
+                </div>
+
+
+
+
+                <div className="col-md-12">
+                    <div class="my-8 mb-5">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Descripcion del Producto" rows="3"></textarea>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div className="col-md-12">
+                    <div class="my-8 mb-5">
+
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Selecciona la Categoria</option>
+                            <option value="gym">Gym</option>
+                            <option value="yoga">Yoga</option>
+                            <option value="combate">Combate</option>
+                            <option value="gimnasia">Gimnasia</option>
+                        </select>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary me-md-2" type="button">Subir Publicacion</button>
+                    <button class="btn btn-primary" type="button">Eliminar Publicacion</button>
+                    <button class="btn btn-primary" type="button">Eitar Publicacion</button>
+                </div>
+
+            </>
+            </div>
+        </div>
+
+    )
+
+}
+
+export default Admin;
+
