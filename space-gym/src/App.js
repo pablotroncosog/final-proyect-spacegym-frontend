@@ -2,7 +2,7 @@ import React from 'react';
 import './styles/App.css';
 import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter, Routes, Route, Form } from "react-router-dom";
-import injectContext from "./store/Context.js";
+import injectContext from "./store/Context";
 
 import { Navbar } from "./components/Navbar"
 import { Footer } from "./components/Footer"
@@ -13,6 +13,7 @@ import { Product } from './views/Product';
 import Login from "./views/Login";
 import Admin from './views/Admin';
 import Registration from "./views/Registration";
+
 
 function App() {
 
