@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useContext , useEffect} from "react";
+import { Context} from  "../store/Context";
 import '../styles/Login.css';
 
 
 const Login = () => {
+  const {store,actions }=useContext(Context)
+// 
+// store.dataUser
+useEffect(() => {
+
+    actions.postLogin (
+    { email:"francisca@gmail.com",
+      password: "123456"
+    },)
+
+  },[]);
+  console.log(store.dataUser);
+ 
+
     return (
     <div className="Auth-form-container">
       <form className="Auth-form">
