@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import '../styles/Admin.css';
 
 
-const Admin = () => {
+export function Admin() {
+
     const [inputFiles, setInputFiles] = useState(null);
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -26,206 +27,89 @@ const Admin = () => {
     };
 
 
+
+
+
     return (
-        <><p className="h1 text-center">Administración</p><div className="row g-3 align-items-center" id="container-main">
-            <div className="col-md-6">
-          
-                    <button type="button" class="btn" data-bs-toggle="button">Nombre de Producto</button>
-              
-                <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline">
-                </input>
-            </div>
-       
-            <div className="col-md-6">
-                <div className="card mb-3 m-auto" >
-                    <form onSubmit={handleSubmit} className="row" id="container-main-2">
-                        <label for="kettlebell">Imagen de referencia:</label>
-                        <input
-                            type="file"
-                            id="barra"
-                            name="barra"
-                            onChange={handleChange}
-                            accept="image/png, image/jpeg"></input>
-                        <button className="btn" type="submit">Upload</button>
-                    </form>
-                </div>
-            </div>
+        <div className="container">
+            <div className="my-8 mb-5">
+            <><h1>Publicar Aviso</h1><div className="container"></div>
 
-            <div className="col-md-6">
-               
-               <button type="button" class="btn" data-bs-toggle="button">Precio</button>
-         
-           <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline">
-           </input>
-       </div>
-       <div className="col-md-6">          
-            <div class="my-8 mb-3">
-                    <button type="button" class="btn btn-lg" data-bs-toggle="button">Descripción de producto</button>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-       </div>
-       <div className="col-md-6">
-               
-               <button type="button" class="btn" data-bs-toggle="button">Clase de Producto</button>
-         
-           <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline">
-           </input>
-       </div>
-       <div className="col-md-6">
-              <button type="button" class="btn-editar" data-bs-toggle="button">Subir Producto</button>
-              <button type="button" class="btn-editar" data-bs-toggle="button">Eliminar Producto</button>
-              <button type="button" class="btn-editar" data-bs-toggle="button">Editar Producto</button>
-            
-
-       </div>
-       <div className="col-lg-12">
-       <button type="button" class="btn-editar" data-bs-toggle="button">Usuarios</button>
-       </div>
-
-       <div className="row" id="container-main-3">
-            <div className="g-4 col-2">
-                <button type="button" class="btn" data-bs-toggle="button">Nombre del producto</button>
-            </div>
-
-            <div className="g-4 col-2">
-                <button type="button" class="btn" data-bs-toggle="button">Precio</button>
-            </div>
-
-            <div className="g-4 col-2">
-                <button type="button" class="btn" data-bs-toggle="button">Clase</button>
-            </div>
-
-            <div className="g-4 col-3">
-                <button type="button" class="btn" data-bs-toggle="button">Descripción</button>
-            </div>
-        </div>    
-    <div className="row"  id="container-main-4">
-        <div className="g-4 col-2">
-            <input type="price" className="form-control" id="price"></input>
-        </div>
-
-        <div className="g-4 col-2">
-            <input type="description" className="form-control" id="description"></input>
-        </div>
-
-        <div className="g-4 col-2">
-            <input type="description" className="form-control" id="description"></input>
-        </div>
-
-        <div className="g-4 col-2">
-            <input type="description" className="form-control" id="description"></input>
-        </div>
-    </div>
-
-    <div className="row"  id="container-main-5">
-                <div className="g-4 col-2">
-                    <label for="name" className="   form-label">Nombre</label>
-                </div>
-
-                <div className="g-4 col-2">
-                    <label for="cellphone" className=" form-label">Celular</label>
-                </div>
-
-                <div className="g-4 col-2">
-                    <label for="mail" className="  form-label">Correo</label>
-                </div>
-
-                <div className="g-4 col-2">
-                    <label for="region" className="   form-label">Region</label>
-                </div>
-
-                <div className="g-4 col-2">
-                    <label for="commune" className=" form-label">Comuna</label>
-                </div>
-
-
-                <div className="g-4 col-2">
-                    <label for="street" className=" form-label">Calle</label>
-                </div>
-            </div>
-
-    <div className="row"  id="container-main-6">
-    <div className="g-4 col-2">
-        <input type="price" className="form-control" id="price"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-    </div>
-    <div className="row"  id="container-main-7" >
-    <div className="g-4 col-2">
-        <input type="price" className="form-control" id="price"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-    </div>
-    <div className="row" id="container-main-8" >
-    <div className="g-4 col-2">
-        <input type="price" className="form-control" id="price"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-    </div>
-        </div>
-        </>
-
-
-   )
                 
-    }
 
- export default Admin;
-            
+
+                    <div className="col-12">
+                        <label form="nameInput" class="form-label"></label>
+                        <input type="text" class="form-control" id="ninput" placeholder="Nombre del Producto" name="name"></input>
+                    </div>
+
+                    <div className="col-12">
+                        <label form="nameInput" class="form-label"></label>
+                        <input type="text" class="form-control" id="ninput" placeholder="Precio" name="street"></input>
+                    </div>
+              
+
+                <div className="col-md-12">
+                    <div className="card mb-5 m-auto" >
+                        <form onSubmit={handleSubmit} className="row" id="container-main-2">
+                            <label for="kettlebell">Imagen de referencia:</label>
+                            <input
+                                type="file"
+                                id="barra"
+                                name="barra"
+                                onChange={handleChange}
+                                accept="image/png, image/jpeg"></input>
+                            <button className="btn btn primary" type="submit">Subir Imagen</button>
+                        </form>
+                    </div>
+                </div>
+
+
+
+
+                <div className="col-md-12">
+                    <div className="my-8 mb-5">
+                        <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Descripcion del Producto" rows="3"></textarea>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div className="col-md-12">
+                    <div className="my-8 mb-5">
+
+                        <select className="form-select" aria-label="Default select example">
+                            <option selected>Selecciona la Categoria</option>
+                            <option value="gym">Gym</option>
+                            <option value="yoga">Yoga</option>
+                            <option value="combate">Combate</option>
+                            <option value="gimnasia">Gimnasia</option>
+                        </select>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button className="btn btn-primary me-md-2" type="button">Subir Publicacion</button>
+                    <button className="btn btn-primary" type="button">Eliminar Publicacion</button>
+                    <button className="btn btn-primary" type="button">Editar Publicacion</button>
+                </div>
+
+            </>
+            </div>
+        </div>
+
+    )
+
+}
+
+export default Admin;
+
