@@ -15,6 +15,8 @@ import Admin from './views/Admin';
 import Registration from "./views/Registration";
 import Account from './views/Account';
 import Shopping from './views/Shopping';
+import Combate from './views/Combate';
+
 
 
 function App() {
@@ -36,6 +38,7 @@ function App() {
           <Route path="/admin" element={<Admin />} />
           <Route path="/account" element={<Account />} />
           <Route path="/shopping" element={<Shopping/>} />
+          <Route path="/combate" element={<Combate/>} />
         </Routes>
       </BrowserRouter>
 
