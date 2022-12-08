@@ -10,7 +10,7 @@
     height: 100vh;
     padding-top: 30px;
     padding-bottom: 30px;
-    border-color:  #0076B8;
+    border-color:  #ffffff;
   }
   
   .Auth-form {
@@ -20,7 +20,7 @@
     padding-bottom: 30px;
     border-radius: 10px;
     background-color: white;
-    border-color: #0076B8;
+    border-color: #ffffff;
   }
   
   .Auth-form-content {

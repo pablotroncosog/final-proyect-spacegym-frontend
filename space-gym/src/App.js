@@ -25,7 +25,7 @@ function App() {
       <div className='row'>
         <div className='col-12'>
           <Navbar />
-          <NavbarUser/>
+          <NavbarUser />
         </div>
       </div>
       <BrowserRouter>
@@ -36,11 +36,12 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/account" element={<Account />} />
-          <Route path="/shopping" element={<Shopping/>} />
+          <Route path="/shopping" element={<Shopping />} />
         </Routes>
       </BrowserRouter>
-
-      <Footer />
+      <div className='col-12'>
+        <Footer />
+      </div>
     </div>
   );
 }

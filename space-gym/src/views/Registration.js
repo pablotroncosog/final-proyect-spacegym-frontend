@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
-import '../styles/Registration.css';
+import '../styles/Login.css';
+
 import { Context } from "../store/Context";
 
 
@@ -26,16 +27,14 @@ const Registration = () => {
 
 
   return (
-    <div className="container-fluid">
 
-      <div className="row">
-        <div className="col-12">
-
+     <div className="container-margin"> 
 
           <div className="Auth-form-container">
             <form className="Auth-form" onSubmit={submitRegistration}>
               <div className="Auth-form-content">
                 <div className="form-group mt-3">
+                <label>Ingresa tus datos</label>
                   <input
                     type="text"
                     onChange={onChange}
@@ -64,16 +63,6 @@ const Registration = () => {
                   />
                 </div>
 
-                <div className="form-group mt-3">
-                  <input
-                    onChange={onChange}
-                    type="password"
-                    className="form-control mt-1"
-                    placeholder="Repetir contraseña"
-                  />
-                </div>
-
-
                 <div className="d-grid gap-2 mt-3">
 
                   <button type="submit" className="btn">
@@ -84,9 +73,8 @@ const Registration = () => {
               </div>
             </form>
           </div>
-        </div>
-      </div>
-    </div>
+      
+          </div> 
 
 
 

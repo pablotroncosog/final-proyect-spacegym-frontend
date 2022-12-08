@@ -14,7 +14,7 @@ export function Navbar() {
 
         <nav className="navbar " id="bg-navbar-1">
             <div className="container-fluid d-flex justify-content-center">
-                <h3>Space Gym</h3>  <div className="mb-2"  style={{ fontSize: "40px", color: "#0076B8" }} > <FontAwesomeIcon icon={faDumbbell} /></div>
+              <h3>Space Gym</h3>  <div className="mb-2" style={{ fontSize: "40px", color: "#0076B8" }} > <FontAwesomeIcon icon={faDumbbell} /></div> 
             </div>
         </nav>
 
@@ -52,19 +52,19 @@ export function Navbar() {
                         <a href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/registration">    <button className="Button-Main mb-2"> Registrate    </button> </a>
                     </div>
                 </div>
-    
 
-        </div>
 
-        <div className="col-lg-1 col-xs-12 col-md-6">
-            <div className="mt-2">
-                <div className="d-flex justify-content-center">
+            </div>
 
-                    <a href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/login">    <button className="Button-Main mb-2"> Iniciar <FontAwesomeIcon icon={faUser} />   </button> </a>
+            <div className="col-lg-1 col-xs-12 col-md-6">
+                <div className="mt-2">
+                    <div className="d-flex justify-content-center">
+
+                        <a href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/login">    <button className="Button-Main mb-2"> Iniciar <FontAwesomeIcon icon={faUser} />   </button> </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div >
 };
 
