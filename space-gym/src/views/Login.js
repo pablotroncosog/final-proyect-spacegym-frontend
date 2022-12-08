@@ -1,31 +1,46 @@
-import React, { useContext , useEffect} from "react";
+import React, { useContext , useEffect, useState} from "react";
 import { Context} from  "../store/Context";
 import '../styles/Login.css';
 
 
 const Login = () => {
   const {store,actions }=useContext(Context)
+  const [infoLogin, setInfoLogin] = useState();
+
+  const onChange= (e) => {setInfoLogin({...infoLogin,[e.target.name]:e.target.value})}
+
+  const submitLogin= (ev) => {
+   
+    ev.preventDefault();
+  
+   actions.postLogin(infoLogin)
+  
+}
+
+
 // 
 // store.dataUser
-useEffect(() => {
+// useEffect(() => {
 
-    actions.postLogin (
-    { email:"francisca@gmail.com",
-      password: "123456"
-    },)
+//     actions.postLogin (
+//     { email:"francisca@gmail.com",
+//       password: "123456"
+//     },)
 
-  },[]);
-  console.log(store.dataUser);
+//   },[]);
+//   console.log(store.dataUser);
+
  
 
     return (
     <div className="Auth-form-container">
-      <form className="Auth-form">
+      <form  onSubmit= { submitLogin } className="Auth-form">
         <div className="Auth-form-content">
           <h3 className="Auth-form-title">Sign In</h3>
-          <div className="form-group mt-3">
+          <div  className="form-group mt-3">
             <label>Email address</label>
-            <input
+            <input onChange={ onChange }
+              name="email"
               type="email"
               className="form-control mt-1"
               placeholder="Enter email"
@@ -33,7 +48,8 @@ useEffect(() => {
           </div>
           <div className="form-group mt-3">
             <label>Password</label>
-            <input
+            <input onChange={ onChange }
+              name="password"
               type="password"
               className="form-control mt-1"
               placeholder="Enter password"

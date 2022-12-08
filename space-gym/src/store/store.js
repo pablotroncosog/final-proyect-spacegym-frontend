@@ -25,8 +25,9 @@ export const getState = ({ getActions, getStore, setStore}) => {
                 
             },
             postLogin: (dataUsers) => { 
-
-              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us77.gitpod.io/login", {
+              console.log(dataUsers);
+              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us78.gitpod.io/login",
+               {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json'
@@ -34,9 +35,10 @@ export const getState = ({ getActions, getStore, setStore}) => {
                 },
                 body: JSON.stringify(dataUsers) } )
               .then((response) => response.json())
-              .then(data => setStore({
-                dataUsers: data,
-              }))
+              .then(data => { 
+                setStore({ dataUsers: data, })
+                localStorage.setItem('infoLogin', JSON.stringify(data));
+              })
               .catch(error => console.log(error))
 
                 

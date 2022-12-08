@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 export function Navbar() {
 
-    return <div classNameName="container-fluid ">
+    return <div className="container-fluid ">
 
         <nav className="navbar " id="bg-navbar-1">
             <div className="container-fluid d-flex justify-content-center">
@@ -29,11 +29,11 @@ export function Navbar() {
                                     Menú
                                 </button>
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/"> Menú principal </a></li>
-                                    <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/registration"> Crear usuario </a></li>
-                                    <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/login"> Iniciar sesion </a></li>
-                                    <li><div class="dropdown-divider"> </div> </li>
-                                    <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/admin"> Admin</a></li>
+                                    <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-es3e6t4g7h4.ws-us77.gitpod.io/"> Menú principal </a></li>
+                                    <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-es3e6t4g7h4.ws-us77.gitpod.io/registration"> Crear usuario </a></li>
+                                    <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-es3e6t4g7h4.ws-us77.gitpod.io/login"> Iniciar sesion </a></li>
+                                    <li><div className="dropdown-divider"> </div> </li>
+                                    <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-es3e6t4g7h4.ws-us77.gitpod.io/admin"> Admin</a></li>
                                 </ul>
                             </div>
                         </div>
