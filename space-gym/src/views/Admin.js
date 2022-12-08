@@ -32,7 +32,7 @@ export function Admin() {
 
     return (
         <div className="container">
-            <div class="my-8 mb-5">
+            <div className="my-8 mb-5">
             <><h1>Publicar Aviso</h1><div className="container"></div>
 
                 
@@ -59,7 +59,7 @@ export function Admin() {
                                 name="barra"
                                 onChange={handleChange}
                                 accept="image/png, image/jpeg"></input>
-                            <button className="btn" type="submit">Subir Imagen</button>
+                            <button className="btn btn primary" type="submit">Subir Imagen</button>
                         </form>
                     </div>
                 </div>
@@ -68,8 +68,8 @@ export function Admin() {
 
 
                 <div className="col-md-12">
-                    <div class="my-8 mb-5">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Descripcion del Producto" rows="3"></textarea>
+                    <div className="my-8 mb-5">
+                        <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Descripcion del Producto" rows="3"></textarea>
                     </div>
 
                 </div>
@@ -79,9 +79,9 @@ export function Admin() {
 
 
                 <div className="col-md-12">
-                    <div class="my-8 mb-5">
+                    <div className="my-8 mb-5">
 
-                        <select class="form-select" aria-label="Default select example">
+                        <select className="form-select" aria-label="Default select example">
                             <option selected>Selecciona la Categoria</option>
                             <option value="gym">Gym</option>
                             <option value="yoga">Yoga</option>
@@ -98,9 +98,9 @@ export function Admin() {
 
 
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button class="btn btn-primary me-md-2" type="button">Subir Publicacion</button>
-                    <button class="btn btn-primary" type="button">Eliminar Publicacion</button>
-                    <button class="btn btn-primary" type="button">Eitar Publicacion</button>
+                    <button className="btn btn-primary me-md-2" type="button">Subir Publicacion</button>
+                    <button className="btn btn-primary" type="button">Eliminar Publicacion</button>
+                    <button className="btn btn-primary" type="button">Editar Publicacion</button>
                 </div>
 
             </>
