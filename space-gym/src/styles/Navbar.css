@@ -11,6 +11,22 @@
     margin: auto;
 }
 
+.Button-Main {
+
+    background-color: #000000 ;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: #797979;
+    height: 50px;
+    width: 80px;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .Button-Main:hover {
+    background: rgb(175, 175, 175);
+  }
+  
+
 #container-footer {
     background-color: #0076B8;
 }

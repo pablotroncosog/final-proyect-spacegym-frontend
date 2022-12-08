@@ -6,6 +6,7 @@ import injectContext from "./store/Context";
 
 import { Navbar } from "./components/Navbar"
 import { Footer } from "./components/Footer"
+import { NavbarUser } from './components/NavbarUser';
 
 import { Main } from "./views/Main"
 import { Offerts } from "./views/Offerts"
@@ -24,6 +25,7 @@ function App() {
       <div className='row'>
         <div className='col-12'>
           <Navbar />
+          <NavbarUser/>
         </div>
       </div>
       <BrowserRouter>

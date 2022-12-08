@@ -8,15 +8,10 @@ import { faCartShopping } from "@fortawesome/free-solid-svg-icons"
 import { faDumbbell } from "@fortawesome/free-solid-svg-icons"
 
 
-export function Navbar() {
+export function NavbarUser() {
 
     return <div classNameName="container-fluid ">
 
-        <nav className="navbar " id="bg-navbar-1">
-            <div className="container-fluid d-flex justify-content-center">
-                <h3>Space Gym</h3>  <div className="mb-2"  style={{ fontSize: "40px", color: "#0076B8" }} > <FontAwesomeIcon icon={faDumbbell} /></div>
-            </div>
-        </nav>
 
         <div className="row">
 
@@ -29,10 +24,11 @@ export function Navbar() {
             </div>
 
 
-
             <div className="col-lg-1 col-xs-12 col-md-6">
 
             </div>
+
+
 
 
             <div className="col-6">
@@ -45,26 +41,37 @@ export function Navbar() {
                 </div>
             </div>
 
+
+
+
+
             <div className="col-lg-2 col-xs-12 col-md-6">
-                <div className="mt-2">
-                    <div className="d-flex justify-content-center">
 
-                        <a href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/registration">    <button className="Button-Main mb-2"> Registrate    </button> </a>
+            </div>
+
+
+
+
+            <div className="col-lg-1 col-xs-12 col-md-6">
+                <nav className="navbar">
+                    <div className="container-fluid">
+                        <div className="m-auto d-flex justify-content-center" id="container-buttons">
+                            <div class="btn-group dropstart">
+                                <button type="button" class="Button-Main dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <FontAwesomeIcon icon={faUser} />
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/Account"> Mi perfil </a></li>
+                                    <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/admin"> Vender </a></li>
+                                    <li><div class="dropdown-divider"> </div> </li>
+                                    <li><a className="dropdown-item"> Cerrar sesión </a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-    
-
-        </div>
-
-        <div className="col-lg-1 col-xs-12 col-md-6">
-            <div className="mt-2">
-                <div className="d-flex justify-content-center">
-
-                    <a href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/login">    <button className="Button-Main mb-2"> Iniciar <FontAwesomeIcon icon={faUser} />   </button> </a>
-                </div>
+                </nav>
             </div>
         </div>
     </div>
-    </div >
 };
 
