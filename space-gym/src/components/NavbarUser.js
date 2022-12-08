@@ -25,11 +25,7 @@ export function NavbarUser() {
 
 
             <div className="col-lg-1 col-xs-12 col-md-6">
-
             </div>
-
-
-
 
             <div className="col-6">
                 <div className="mt-2" >

@@ -25,7 +25,7 @@ function App() {
       <div className='row'>
         <div className='col-12'>
           <Navbar />
-          <NavbarUser />
+     
         </div>
       </div>
       <BrowserRouter>

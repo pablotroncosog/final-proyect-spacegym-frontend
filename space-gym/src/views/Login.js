@@ -42,7 +42,7 @@ const Login = () => {
               />
             </div>
             <div className="d-grid gap-2 mt-3">
-              <button type="submit" className="btn">
+              <button type="submit" className="button-history">
                 Iniciar sesión
               </button>
             </div>

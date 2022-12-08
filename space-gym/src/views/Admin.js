@@ -27,15 +27,17 @@ const Admin = () => {
 
 
     return (
-        <><p className="h1 text-center">Administración</p><div className="row g-3 align-items-center" id="container-main">
+
+        <div> 
+            <p className="h1 text-center">Venta</p><div className="row g-3 align-items-center" id="container-main">
             <div className="col-md-6">
-          
-                    <button type="button" class="btn" data-bs-toggle="button">Nombre de Producto</button>
-              
+
+                <button type="button" class="btn" data-bs-toggle="button">Nombre de Producto</button>
+
                 <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline">
                 </input>
             </div>
-       
+
             <div className="col-md-6">
                 <div className="card mb-3 m-auto" >
                     <form onSubmit={handleSubmit} className="row" id="container-main-2">
@@ -52,180 +54,46 @@ const Admin = () => {
             </div>
 
             <div className="col-md-6">
-               
-               <button type="button" class="btn" data-bs-toggle="button">Precio</button>
-         
-           <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline">
-           </input>
-       </div>
-       <div className="col-md-6">          
-            <div class="my-8 mb-3">
+
+                <button type="button" class="btn" data-bs-toggle="button">Precio</button>
+
+                <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline">
+                </input>
+            </div>
+            <div className="col-md-6">
+                <div class="my-8 mb-3">
                     <button type="button" class="btn btn-lg" data-bs-toggle="button">Descripción de producto</button>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-       </div>
-       <div className="col-md-6">
-               
-               <button type="button" class="btn" data-bs-toggle="button">Clase de Producto</button>
-         
-           <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline">
-           </input>
-       </div>
-       <div className="col-md-6">
-              <button type="button" class="btn-editar" data-bs-toggle="button">Subir Producto</button>
-              <button type="button" class="btn-editar" data-bs-toggle="button">Eliminar Producto</button>
-              <button type="button" class="btn-editar" data-bs-toggle="button">Editar Producto</button>
-            
-
-       </div>
-       <div className="col-lg-12">
-       <button type="button" class="btn-editar" data-bs-toggle="button">Usuarios</button>
-       </div>
-
-       <div className="row" id="container-main-3">
-            <div className="g-4 col-2">
-                <button type="button" class="btn" data-bs-toggle="button">Nombre del producto</button>
             </div>
+            <div className="col-md-6">
 
-            <div className="g-4 col-2">
-                <button type="button" class="btn" data-bs-toggle="button">Precio</button>
-            </div>
+                <button type="button" class="btn" data-bs-toggle="button">Clase de Producto</button>
 
-            <div className="g-4 col-2">
-                <button type="button" class="btn" data-bs-toggle="button">Clase</button>
+                <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline">
+                </input>
             </div>
+            <div className="col-md-6">
+                <button type="button" class="btn-editar" data-bs-toggle="button">Subir Producto</button>
+                <button type="button" class="btn-editar" data-bs-toggle="button">Eliminar Producto</button>
+                <button type="button" class="btn-editar" data-bs-toggle="button">Editar Producto</button>
 
-            <div className="g-4 col-3">
-                <button type="button" class="btn" data-bs-toggle="button">Descripción</button>
-            </div>
-        </div>    
-    <div className="row"  id="container-main-4">
-        <div className="g-4 col-2">
-            <input type="price" className="form-control" id="price"></input>
+
+                </div>
+
+
+
+
         </div>
 
-        <div className="g-4 col-2">
-            <input type="description" className="form-control" id="description"></input>
+
         </div>
 
-        <div className="g-4 col-2">
-            <input type="description" className="form-control" id="description"></input>
-        </div>
-
-        <div className="g-4 col-2">
-            <input type="description" className="form-control" id="description"></input>
-        </div>
-    </div>
-
-    <div className="row"  id="container-main-5">
-                <div className="g-4 col-2">
-                    <label for="name" className="   form-label">Nombre</label>
-                </div>
-
-                <div className="g-4 col-2">
-                    <label for="cellphone" className=" form-label">Celular</label>
-                </div>
-
-                <div className="g-4 col-2">
-                    <label for="mail" className="  form-label">Correo</label>
-                </div>
-
-                <div className="g-4 col-2">
-                    <label for="region" className="   form-label">Region</label>
-                </div>
-
-                <div className="g-4 col-2">
-                    <label for="commune" className=" form-label">Comuna</label>
-                </div>
 
 
-                <div className="g-4 col-2">
-                    <label for="street" className=" form-label">Calle</label>
-                </div>
-            </div>
+    )
 
-    <div className="row"  id="container-main-6">
-    <div className="g-4 col-2">
-        <input type="price" className="form-control" id="price"></input>
-    </div>
+}
 
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
+export default Admin;
 
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-    </div>
-    <div className="row"  id="container-main-7" >
-    <div className="g-4 col-2">
-        <input type="price" className="form-control" id="price"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-    </div>
-    <div className="row" id="container-main-8" >
-    <div className="g-4 col-2">
-        <input type="price" className="form-control" id="price"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-
-    <div className="g-4 col-2">
-        <input type="description" className="form-control" id="description"></input>
-    </div>
-    </div>
-        </div>
-        </>
-
-
-   )
-                
-    }
-
- export default Admin;
-            

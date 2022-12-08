@@ -65,7 +65,7 @@ const Registration = () => {
 
                 <div className="d-grid gap-2 mt-3">
 
-                  <button type="submit" className="btn">
+                  <button type="submit" className="button-history">
                     Registrate
                   </button>
                 </div>
