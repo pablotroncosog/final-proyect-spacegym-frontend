@@ -4,6 +4,7 @@ export const getState = ({ getActions, getStore, setStore}) => {
         store: {
            products: [],
            users: [],
+           admin: [],
            dataUser: []
         },
         actions: {
@@ -15,6 +16,16 @@ export const getState = ({ getActions, getStore, setStore}) => {
               }))
               .catch(error => console.log(error))
             },
+            getAdmin: () => { 
+              fetch("https://8080-pablotronco-finalproyec-r5i5o0okka4.ws-us77.gitpod.io/admin")
+              .then((response) => response.json())
+              .then(data => setStore({
+                admin: data,
+              }))
+              .catch(error => console.log(error))
+                
+            },
+            
             getUsers: () => { 
               fetch("https://8080-pablotronco-finalproyec-r5i5o0okka4.ws-us77.gitpod.io/users")
               .then((response) => response.json())
@@ -25,8 +36,9 @@ export const getState = ({ getActions, getStore, setStore}) => {
                 
             },
             postLogin: (dataUsers) => { 
-
-              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us77.gitpod.io/login", {
+              console.log(dataUsers);
+              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us78.gitpod.io/login",
+               {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json'
@@ -34,9 +46,10 @@ export const getState = ({ getActions, getStore, setStore}) => {
                 },
                 body: JSON.stringify(dataUsers) } )
               .then((response) => response.json())
-              .then(data => setStore({
-                dataUsers: data,
-              }))
+              .then(data => { 
+                setStore({ dataUsers: data, })
+                localStorage.setItem('infoLogin', JSON.stringify(data));
+              })
               .catch(error => console.log(error))
 
                 

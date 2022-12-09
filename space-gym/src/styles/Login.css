@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-=======
-.App {
-    background-color:  #ffffff;
-  }
->>>>>>> 4872d0904e4779cb1c9e60e2a38835260f438594
   
   .Auth-form-container {
     display: flex;
@@ -91,6 +85,26 @@
   border: #797979;
   height: 50px;
   width: 200px;
+  box-shadow: 1px 1px 1px rgb(0, 0, 0);
+  cursor: pointer;
+}
+.button-history:hover {
+  background: cyan;
+}
+
+.container-margin{
+  margin-top: -10%;
+  margin-bottom: -10%;
+}
+
+.button-history {
+  margin: auto;
+  background-color: #D1FFF4 ;
+  color: black;
+  border-radius: 5px;
+  border: #797979;
+  height: 50px;
+  width: 400px;
   box-shadow: 1px 1px 1px rgb(0, 0, 0);
   cursor: pointer;
 }

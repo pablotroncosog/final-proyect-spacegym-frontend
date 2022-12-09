@@ -14,18 +14,10 @@ const Account = () => {
                     <div className="col-4 justify-content-between">
                         <div className="container-profile mb-4">  <h4>Nombre</h4> </div>
                         <div className="container-profile mb-4">  <h4>Correo</h4> </div>
-                        <div className="container-profile mb-4">  <h4>Celular</h4></div>
-                        <div className="container-profile mb-4">  <h4>Comuna </h4></div>
-                        <div className="container-profile mb-4">  <h4>Región </h4></div>
-                        <div className="container-profile mb-4">  <h4>Calle y número</h4></div>
                     </div>
                     <div className="col-4 justify-content-between">
                         <div> Nombre <input type="description" className="form-control" ></input> </div>
                         <div> Correo <input type="description" className="form-control" ></input> </div>
-                        <div> Celular <input type="description" className="form-control" ></input> </div>
-                        <div> Comuna <input type="description" className="form-control" ></input> </div>
-                        <div> Región <input type="description" className="form-control" ></input></div>
-                        <div> Cálle y número <input type="description" className="form-control" ></input></div>
                     </div>
                 </div>
             </table>

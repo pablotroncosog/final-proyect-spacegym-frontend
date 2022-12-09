@@ -1,17 +1,16 @@
 import React from "react";
-import '../styles/Shopping.css';
 
 
-const Shopping = () => {
+
+const Gym = () => {
     return (
         <div className="container-fluid">
 
-   
-
+            
         </div>
 
 
     )
 }
 
-export default Shopping;
+export default Gym;
