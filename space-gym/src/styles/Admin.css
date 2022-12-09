@@ -1,12 +1,15 @@
-h1{
-    text-align: center;
-}
-label{
-    border-radius: 5%;
-    border-color: #D9D9D9;
-    border-width: 5%;
-    
-}
+.button-admin {
+    margin: auto;
+     background-color: #D1FFF4 ;
+     color: black;
+     border-radius: 5px;
+     border: #797979;
+     height: 24%;
+     width: 30%;
+     box-shadow: 1px 1px 1px rgb(0, 0, 0);
+     cursor: pointer;
+   }
+   .button-admin:hover {
+     background: cyan;
+   }
 
-
-  

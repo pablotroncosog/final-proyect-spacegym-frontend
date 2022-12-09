@@ -5,10 +5,9 @@ import "../styles/App.css"
 
 export function Footer() {
 
-    return <div className="container-fluid">
-        <div className="row"> 
+    return <div className="row"> 
             <div className="col-12 text-light text-center mt-5">
-                <div className="container-fluid" id="container-footer" >
+                <div className="container-fluid mt-5" id="container-footer" >
                     <div className="row mt-4 p-5">
                         <div className="col-xs-12 col-md-6 col-lg-3  text-light">
                             <p className="h4 "> Sobre nosotros </p>
@@ -29,7 +28,7 @@ export function Footer() {
                 </div>
             </div>
         </div>
-    </div>
+  
 
 };
 
