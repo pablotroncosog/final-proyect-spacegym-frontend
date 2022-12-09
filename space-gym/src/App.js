@@ -18,7 +18,7 @@ import Admin from './views/Admin';
 import Registration from "./views/Registration";
 import Account from './views/Account';
 import Shopping from './views/Shopping';
-import Combate from './views/Combate';
+import Combat from './views/Combat';
 
 
 
@@ -29,11 +29,10 @@ function App() {
     <div className="App">
       <div className='row'>
         <div className='col-12'>
-          <Navbar /> 
-         
-     
+          <Navbar />     
         </div>
       </div>
+      
        <BrowserRouter> 
         <Routes>
           <Route path='/' element={<Main />}> </Route>
@@ -42,10 +41,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/account" element={<Account />} />
-
-          <Route path="/shopping" element={<Shopping />} />
           <Route path="/shopping" element={<Shopping/>} />
-          <Route path="/combate" element={<Combate/>} />
+          <Route path="/combat" element={<Combat/>} />
         </Routes>
       </BrowserRouter>
       <div className='col-12'>

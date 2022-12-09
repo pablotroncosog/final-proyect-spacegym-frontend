@@ -7,8 +7,7 @@ import '../styles/Login.css';
 const Login = () => {
 
   const { store, actions } = useContext(Context)
-  // 
-  // store.dataUser
+
   useEffect(() => {
 
     actions.postLogin(
@@ -20,8 +19,8 @@ const Login = () => {
   }, []);
   console.log(store.dataUser);
  
-  const {store,actions }=useContext(Context)
-  const [infoLogin, setInfoLogin] = useState();
+ 
+ /*  const [infoLogin, setInfoLogin] = useState();
 
   const onChange= (e) => {setInfoLogin({...infoLogin,[e.target.name]:e.target.value})}
 
@@ -31,11 +30,9 @@ const Login = () => {
   
    actions.postLogin(infoLogin)
   
-};
+}; */
 
  
-
-
   return (
     <div className="container-margin">
       <div className="Auth-form-container">

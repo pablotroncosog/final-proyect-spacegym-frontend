@@ -12,12 +12,14 @@ export function Navbar() {
 
     return <div className="container-fluid ">
 
-        <nav className="navbar " id="bg-navbar-1">
-            <div className="container-fluid d-flex justify-content-center">
-            <a href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us78.gitpod.io/">    <button className="Button-Navbar mb-2">      <h3>Space Gym</h3> <div className="mb-2" style={{ fontSize: "40px", color: "#0076B8" }} > <FontAwesomeIcon icon={faDumbbell} /></div>  </button> </a>
-                   
-            </div>
-        </nav>
+        <div className="row">
+            <nav className="navbar " id="bg-navbar-1">
+                <div className="container-fluid d-flex justify-content-center">
+                    <a href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us78.gitpod.io/">    <button className="Button-Navbar mb-2">      <h3>Space Gym</h3> <div className="mb-2" style={{ fontSize: "40px", color: "#0076B8" }} > <FontAwesomeIcon icon={faDumbbell} /></div>  </button> </a>
+
+                </div>
+            </nav>
+        </div>
 
         <div className="row">
 
