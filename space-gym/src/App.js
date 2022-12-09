@@ -33,7 +33,8 @@ function App() {
         </div>
       </div>
       
-       <BrowserRouter> 
+      <div className='row'> 
+      <BrowserRouter> 
         <Routes>
           <Route path='/' element={<Main />}> </Route>
           <Route path='/:id' element={<Product />}> </Route>
@@ -45,6 +46,8 @@ function App() {
           <Route path="/combat" element={<Combat/>} />
         </Routes>
       </BrowserRouter>
+      </div> 
+      
       <div className='col-12'>
         <Footer />
       </div>

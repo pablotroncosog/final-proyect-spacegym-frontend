@@ -13,7 +13,7 @@ export function NavbarUser() {
     return <div classNameName="container-fluid ">
 
 
-        <div className="row">
+        <div className="row  row-nav">
 
             <div className="col-lg-2 col-xs-12 col-md-6">
                 <div className="mt-2">
