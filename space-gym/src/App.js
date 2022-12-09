@@ -48,7 +48,7 @@ function App() {
       </BrowserRouter>
       </div> 
       
-      <div className='col-12'>
+      <div className='col-12 mt-5'>
         <Footer />
       </div>
 
