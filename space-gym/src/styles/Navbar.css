@@ -11,10 +11,40 @@
     margin: auto;
 }
 
+.Button-Main {
+
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: #797979;
+    height: 50px;
+    width: 80px;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.Button-Main:hover {
+    background: rgb(175, 175, 175);
+}
+
+
 #container-footer {
     background-color: #0076B8;
 }
 
 #container-footer-2 {
     background-color: #0076B8;
+}
+
+.Button-Navbar {
+
+    cursor: pointer;
+    border: 1px solid #000000;
+    background-color: azure;
+    height: 100px;
+    width: 200px;
+    color: #000000;
+    font-size: 1.5em;
+    border-radius: 12px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6)
 }

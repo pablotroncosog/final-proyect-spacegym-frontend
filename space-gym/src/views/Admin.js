@@ -31,39 +31,53 @@ export function Admin() {
 
 
     return (
-        <div className="container">
-            <div className="my-8 mb-5">
-            <><h1>Publicar Aviso</h1><div className="container"></div>
 
-                
-
-
-                    <div className="col-12">
-                        <label form="nameInput" class="form-label"></label>
-                        <input type="text" class="form-control" id="ninput" placeholder="Nombre del Producto" name="name"></input>
-                    </div>
-
-                    <div className="col-12">
-                        <label form="nameInput" class="form-label"></label>
-                        <input type="text" class="form-control" id="ninput" placeholder="Precio" name="street"></input>
-                    </div>
-              
-
-                <div className="col-md-12">
-                    <div className="card mb-5 m-auto" >
-                        <form onSubmit={handleSubmit} className="row" id="container-main-2">
-                            <label for="kettlebell">Imagen de referencia:</label>
-                            <input
-                                type="file"
-                                id="barra"
-                                name="barra"
-                                onChange={handleChange}
-                                accept="image/png, image/jpeg"></input>
-                            <button className="btn btn primary" type="submit">Subir Imagen</button>
-                        </form>
-                    </div>
                 </div>
 
+
+            <div className="col-md-6">
+
+                <button type="button" class="btn" data-bs-toggle="button">Precio</button>
+
+                <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline">
+                </input>
+            </div>
+            <div className="col-md-6">
+                <div class="my-8 mb-3">
+                    <button type="button" class="btn btn-lg" data-bs-toggle="button">Descripción de producto</button>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+            <div className="col-md-6">
+
+                <button type="button" class="btn" data-bs-toggle="button">Clase de Producto</button>
+
+                <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline">
+                </input>
+            </div>
+            <div className="col-md-6">
+                <button type="button" class="btn-editar" data-bs-toggle="button">Subir Producto</button>
+                <button type="button" class="btn-editar" data-bs-toggle="button">Eliminar Producto</button>
+                <button type="button" class="btn-editar" data-bs-toggle="button">Editar Producto</button>
+
+
+                </div>
+
+
+
+
+        </div>
+
+
+        </div>
+
+
+
+    )
+
+}
+
+=======
 
 
 
@@ -110,6 +124,7 @@ export function Admin() {
     )
 
 }
+
 
 export default Admin;
 

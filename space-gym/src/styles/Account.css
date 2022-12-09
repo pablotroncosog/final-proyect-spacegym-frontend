@@ -20,7 +20,7 @@
     padding-bottom: 30px;
     border-radius: 10px;
     background-color: white;
-    border-color: #0076B8;
+    border-color: #ffffff;
   }
   
   .Auth-form-content {
@@ -52,12 +52,10 @@
 }
 
 .button-edit {
-  margin-top: 80%;
+  margin-top: 10%;
   background-color: #D1FFF4 ;
   color: black;
   border-radius: 5px;
-  border: #797979;
-  height: 50px;
   width: 80px;
   box-shadow: 1px 1px 1px rgb(0, 0, 0);
   cursor: pointer;
