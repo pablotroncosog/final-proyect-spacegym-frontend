@@ -13,8 +13,6 @@ import aros from "../images/Aros.jpg"
 const Combate = () => {
 
     return (
-
-
         <div className="container">
 
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -78,10 +76,6 @@ const Combate = () => {
 
 
         </div>
-
-
-
-
     );
 }
 

@@ -1,114 +1,84 @@
-import React, { useContext , useEffect, useState} from "react";
-import '../styles/Registration.css';
-import { Context} from  "../store/Context";
+import React, { useContext, useEffect, useState } from "react";
+import '../styles/Login.css';
+
+import { Context } from "../store/Context";
 
 
 const Registration = () => {
-  const {store,actions }=useContext(Context)
+  const { store, actions } = useContext(Context)
 
-  const [info, setInfo] = useState ()
+  const [info, setInfo] = useState()
 
-  const [ checked, setChecked ] = useState ()
- 
+  const [checked, setChecked] = useState()
 
-  const onChange= (e) => {setInfo({...info,[e.target.name]:e.target.value})}
 
-  const submitRegistration= (ev) => {
-   
-      ev.preventDefault();
-    
-     actions.postRegistration(info)
-    
+  const onChange = (e) => { setInfo({ ...info, [e.target.name]: e.target.value }) }
+
+  const submitRegistration = (ev) => {
+
+    ev.preventDefault();
+
+    actions.postRegistration(info)
+
   }
 
-  
-  console.log("probando info" ,info);
-  
 
-    return (
-            <><h1>Registro</h1><div className="container">
-       
-        <form onSubmit= { submitRegistration } className="row g-3 " id="container-main">
-       
+  console.log("probando info", info);
 
-          <div className="col-6">
-            <label form="nameInput" class="form-label"></label>
-            <input onChange={ onChange } type="text" class="form-control" id="ninput" placeholder="Nombre" name="name"></input>
+
+  return (
+
+     <div className="container-margin"> 
+
+          <div className="Auth-form-container">
+            <form className="Auth-form" onSubmit={submitRegistration}>
+              <div className="Auth-form-content">
+                <div className="form-group mt-3">
+                <label>Ingresa tus datos</label>
+                  <input
+                    type="text"
+                    onChange={onChange}
+                    className="form-control mt-1"
+                    placeholder="Nombre"
+                    name="name"
+                  />
+                </div>
+
+                <div className="form-group mt-3">
+                  <input
+                    type="email"
+                    onChange={onChange}
+                    className="form-control mt-1"
+                    placeholder="Correo"
+                    name="email"
+                  />
+                </div>
+
+                <div className="form-group mt-3">
+                  <input
+                    onChange={onChange}
+                    type="password"
+                    className="form-control mt-1"
+                    placeholder="Contraseña"
+                  />
+                </div>
+
+                <div className="d-grid gap-2 mt-3">
+
+                  <button type="submit" className="button-history">
+                    Registrate
+                  </button>
+                </div>
+
+              </div>
+            </form>
           </div>
-          <div className="col-6">
-            <label form="lastnameInput" class="form-label"></label>
-            <input onChange={ onChange }type="text" class="form-control" id="ninput" placeholder="Apellido" name="lastname"></input>
-          </div>
-          <div className="col-12">
-            <label form="phonenumberInput" class="form-label"></label>
-            <input onChange={ onChange }type="text" class="form-control" id="ninput" placeholder="Correo electronico" name="email"></input>
-          </div>
-       
-          <div className="col-12">
-            <label form="passwordInput" class="form-label"></label>
-            <input onChange={ onChange }type="text" class="form-control" id="ninput" placeholder="Contraseña" name="password"></input>
-          </div>
-          <div className="col-4">
-            <label form="comunaInput" class="form-label"></label>
-            <input onChange={ onChange }type="text" class="form-control" id="ninput" placeholder="Comuna" name="province"></input>
-          </div>
-          <div className="col-4">
-            <label form="regionInput" class="form-label"></label>
-            <input onChange={ onChange }type="text" class="form-control" id="ninput" placeholder="Region" name="state" ></input>
-          </div>
-          <div className="col-4">
-            <label form="calleInput" class="form-label"></label>
-            <input onChange={ onChange }type="text" class="form-control" id="ninput" placeholder="Calle y Numero" name="street"></input>
-          </div>
-          <div className="col-4">
-            <label form="calleInput" class="form-label"></label>
-            <input onChange={ onChange } type="text" class="form-control" id="ninput" placeholder="Dia" name="day"></input>
-          </div>
-          <div className="col-4">
-            <label form="calleInput" class="form-label"></label>
-            <input  onChange={ onChange }type="text" class="form-control" id="ninput" placeholder="Mes" name="month"></input>
-          </div>
-          <div className="col-4">
-            <label form="calleInput" class="form-label"></label>
-            <input onChange={ onChange }type="text" class="form-control" id="ninput" placeholder="Año" name="year"></input>
-          </div>               
-          <div className="col-3">
-          <div class="form-check " onClick={()=>{setChecked("men") 
-           setInfo({gender:checked})}} >
-            <input  checked = {checked==="men"} class="form-check-input" type="checkbox" value={checked} id="flexCheckDefault" name="men" ></input>
-            <label class="form-check-label" for="flexCheckDefault">
-              Hombre
-            </label>
-          </div>
-          </div>
-          <div className="col-3">
-          <div  class="form-check" onClick={()=>{setChecked("women") 
-          setInfo({gender:checked})}}>
-            <input checked = {checked==="women"} class="form-check-input" type="checkbox" value={checked}id="flexCheckDefault" name="women"></input>
-            <label class="form-check-label" for="flexCheckDefault">
-              Mujer
-            </label>
-          </div>
-          </div>
-          <div className="col-3">
-          <div  class="form-check" onClick={()=>{setChecked("other") 
-          setInfo({gender:checked})}}> 
-            <input  checked = {checked==="other"} class="form-check-input" type="checkbox" value={checked} id="flexCheckDefault" name="other"></input>
-            <label class="form-check-label" for="flexCheckDefault">
-              Otro
-            </label>
-          </div>
-          </div>
-          <div className="col-12">
-            <label form="genero" class="form-label"></label>
-            <input type="text" class="form-control" id="genero" placeholder="Identidad de Genero"></input>
-          </div>
-          <div className="col-4">
-          <button type="button" class="btn-sm">Registrate</button>
-          </div>
-        </form>
-      </div></>     
-);
- }
+      
+          </div> 
+
+
+
+  );
+}
 
 export default Registration;
