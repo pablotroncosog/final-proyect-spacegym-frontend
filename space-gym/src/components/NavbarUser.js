@@ -18,7 +18,7 @@ export function NavbarUser() {
             <div className="col-lg-2 col-xs-12 col-md-6">
                 <div className="mt-2">
                     <div className="m-auto d-flex justify-content-center">
-                        <a class="Button-Main" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/shopping"> <button className="Button-Main mb-2"> <FontAwesomeIcon icon={faCartShopping} />  </button> </a>
+                        <a class="Button-Main" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us78.gitpod.io/shopping"> <button className="Button-Main mb-2"> <FontAwesomeIcon icon={faCartShopping} />  </button> </a>
                     </div>
                 </div>
             </div>
@@ -57,8 +57,8 @@ export function NavbarUser() {
                                     <FontAwesomeIcon icon={faUser} />
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/Account"> Mi perfil </a></li>
-                                    <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us77.gitpod.io/admin"> Vender </a></li>
+                                    <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us78.gitpod.io/Account"> Mi perfil </a></li>
+                                    <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us78.gitpod.io/admin"> Vender </a></li>
                                     <li><div class="dropdown-divider"> </div> </li>
                                     <li><a className="dropdown-item"> Cerrar sesión </a></li>
                                 </ul>

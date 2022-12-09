@@ -24,7 +24,8 @@ function App() {
     <div className="App">
       <div className='row'>
         <div className='col-12'>
-          <Navbar />
+          <Navbar /> 
+         
      
         </div>
       </div>
