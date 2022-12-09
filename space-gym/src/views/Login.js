@@ -1,9 +1,11 @@
+
 import React, { useContext, useEffect } from "react";
 import { Context } from "../store/Context";
 import '../styles/Login.css';
 
 
 const Login = () => {
+
   const { store, actions } = useContext(Context)
   // 
   // store.dataUser
@@ -17,6 +19,21 @@ const Login = () => {
 
   }, []);
   console.log(store.dataUser);
+ 
+  const {store,actions }=useContext(Context)
+  const [infoLogin, setInfoLogin] = useState();
+
+  const onChange= (e) => {setInfoLogin({...infoLogin,[e.target.name]:e.target.value})}
+
+  const submitLogin= (ev) => {
+   
+    ev.preventDefault();
+  
+   actions.postLogin(infoLogin)
+  
+};
+
+ 
 
 
   return (

@@ -10,7 +10,7 @@ import { faDumbbell } from "@fortawesome/free-solid-svg-icons"
 
 export function Navbar() {
 
-    return <div classNameName="container-fluid ">
+    return <div className="container-fluid ">
 
         <nav className="navbar " id="bg-navbar-1">
             <div className="container-fluid d-flex justify-content-center">
@@ -22,6 +22,7 @@ export function Navbar() {
         <div className="row">
 
             <div className="col-lg-2 col-xs-12 col-md-6">
+
                 <div className="mt-2">
                     <div className="m-auto d-flex justify-content-center">
                         <a class="Button-Main" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us78.gitpod.io/shopping"> <button className="Button-Main mb-2"> <FontAwesomeIcon icon={faCartShopping} />  </button> </a>
