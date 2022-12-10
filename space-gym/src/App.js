@@ -42,7 +42,7 @@ function App() {
           <Route path="/admin" element={<Admin />} />
           <Route path="/account" element={<Account />} />
           <Route path="/shopping" element={<Shopping/>} />
-          <Route path="/productbycategory" element={<ProductByCategory/>} />
+          <Route path="/productbycategory/:id" element={<ProductByCategory/>} />
         </Routes>
       </BrowserRouter>
       <div className='col-12'>
