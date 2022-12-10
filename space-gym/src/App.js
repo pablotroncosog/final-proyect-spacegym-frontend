@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/App.css';
 import "bootstrap/dist/css/bootstrap.min.css"
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import 'bootstrap/dist/js/bootstrap.js';
 
 import injectContext from "./store/Context";
@@ -27,12 +27,13 @@ function App() {
     <div className="App">
       <div className='row'>
         <div className='col-12'>
-          <Navbar />     
+      
         </div>
       </div>
       
       <div className='row'> 
       <BrowserRouter> 
+      <Navbar />   
         <Routes>
           <Route path='/' element={<Main />}> </Route>
           <Route path="/registration" element={<Registration />} />

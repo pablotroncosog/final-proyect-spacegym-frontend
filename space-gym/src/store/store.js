@@ -35,7 +35,7 @@ export const getState = ({ getActions, getStore, setStore}) => {
               .catch(error => console.log(error))
                 
             },
-            postLogin: (dataUsers) => { 
+            postLogin: (dataUsers, navigate) => { 
               console.log(dataUsers);
               fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us78.gitpod.io/login",
                {
@@ -48,6 +48,7 @@ export const getState = ({ getActions, getStore, setStore}) => {
               .then((response) => response.json())
               .then(data => { 
                 setStore({ dataUsers: data, })
+                navigate("/admin")
                 localStorage.setItem('infoLogin', JSON.stringify(data));
               })
               .catch(error => console.log(error))

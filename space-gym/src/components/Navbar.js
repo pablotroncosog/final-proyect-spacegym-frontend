@@ -2,9 +2,9 @@ import React from "react";
 import "../styles/Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap/dist/js/bootstrap.js';
+import { Link } from "react-router-dom";
 
-
-import { FontAwesomeIcon, FontawesomeObject } from "@fortawesome/react-fontawesome"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUser } from "@fortawesome/free-solid-svg-icons"
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons"
 import { faDumbbell } from "@fortawesome/free-solid-svg-icons"
@@ -13,8 +13,7 @@ import { faDumbbell } from "@fortawesome/free-solid-svg-icons"
 export function Navbar() {
 
     return <div className="container-fluid ">
-
-        <div className="row row-nav">
+  <div className="row row-nav">
             <nav className="navbar " id="bg-navbar-1">
                 <div className="container-fluid d-flex justify-content-center">
                     <a href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us78.gitpod.io/">    <button className="Button-Navbar mb-2">      <h3>Space Gym</h3> <div className="mb-2" style={{ fontSize: "40px", color: "#0076B8" }} > <FontAwesomeIcon icon={faDumbbell} /></div>  </button> </a>
