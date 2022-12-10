@@ -31,11 +31,7 @@ export function Main() {
                             <img src={deadlift} className="d-block w-100  h-80  img-fluid" alt="..." />
                         </div>
                         <div className="carousel-item">
-<<<<<<< HEAD
                            <img src={remo} className="d-block w-100 h-80  img-fluid" alt="..." />
-=======
-                         <img src={remo} className="d-block w-100 h-80  img-fluid" alt="..." />
->>>>>>> 5cf2abbfe77373924450fa836fac4aa2928b7243
                         </div>
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
