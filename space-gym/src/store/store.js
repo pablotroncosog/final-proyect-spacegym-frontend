@@ -8,8 +8,10 @@ export const getState = ({ getActions, getStore, setStore}) => {
            dataUser: []
         },
         actions: {
-            getCharacters: () => {
-              fetch("https://3000-pablotronco-finalproyec-sipk2h70htv.ws-us78.gitpod.io/products")
+           
+            getProducts: () => {
+              fetch("https://8080-pablotronco-finalproyec-r5i5o0okka4.ws-us77.gitpod.io/products")
+
               .then((response) => response.json())
               .then(data => setStore({
                 products: data,
@@ -25,7 +27,6 @@ export const getState = ({ getActions, getStore, setStore}) => {
               .catch(error => console.log(error))
                 
             },
-            
             getUsers: () => { 
               fetch("https://3000-pablotronco-finalproyec-sipk2h70htv.ws-us78.gitpod.io/users")
               .then((response) => response.json())
@@ -52,7 +53,6 @@ export const getState = ({ getActions, getStore, setStore}) => {
                 localStorage.setItem('infoLogin', JSON.stringify(data));
               })
               .catch(error => console.log(error))
-
                 
             },
             postRegistration: (dataUsers) => { 
@@ -69,13 +69,7 @@ export const getState = ({ getActions, getStore, setStore}) => {
                 dataUsers: data,
               }))
               .catch(error => console.log(error))
-
-                
             }
-
-
         }
-        
-
     }
 } 

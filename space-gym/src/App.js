@@ -7,7 +7,7 @@ import 'bootstrap/dist/js/bootstrap.js';
 import injectContext from "./store/Context";
 import { Navbar } from "./components/Navbar"
 import { Footer } from "./components/Footer"
-// import { NavbarUser } from './components/NavbarUser';
+
 import { Main } from "./views/Main"
 import Login from "./views/Login";
 import Admin from './views/Admin';
@@ -24,13 +24,7 @@ function App() {
 
 
   return (
-    <div className="App">
-      <div className='row'>
-        <div className='col-12'>
-      
-        </div>
-      </div>
-      
+    <div className="App">   
       <div className='row'> 
       <BrowserRouter> 
       <Navbar />   
