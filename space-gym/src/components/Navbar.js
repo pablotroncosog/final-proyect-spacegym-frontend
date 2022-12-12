@@ -61,11 +61,24 @@ export function Navbar() {
             </div>
 
             <div className="col-lg-1 col-xs-12 col-md-6">
-                <div className="mt-2">
-                    <div className="d-flex justify-content-center">
-                        <a href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us78.gitpod.io/login">    <button className="Button-Main mb-2"> Iniciar <FontAwesomeIcon icon={faUser} />   </button> </a>
+            <nav className="navbar">
+                    <div className="container-fluid">
+                        <div className="m-auto d-flex justify-content-center" id="container-buttons">
+                            <div class="btn-group dropstart">
+                                <button type="button" class="Button-Main dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <FontAwesomeIcon icon={faUser} />
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us78.gitpod.io/login"> Iniciar esión </a></li>
+                                    <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us78.gitpod.io/Account"> Mi perfil </a></li>
+                                    <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us78.gitpod.io/admin"> Vender </a></li>
+                                    <li><div class="dropdown-divider"> </div> </li>
+                                    <li><a className="dropdown-item"> Cerrar sesión </a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </nav>
             </div>
         </div>
     </div >
