@@ -7,12 +7,12 @@ import 'bootstrap/dist/js/bootstrap.js';
 import injectContext from "./store/Context";
 import { Navbar } from "./components/Navbar"
 import { Footer } from "./components/Footer"
-import { NavbarUser } from './components/NavbarUser';
+// import { NavbarUser } from './components/NavbarUser';
 import { Main } from "./views/Main"
 import Login from "./views/Login";
 import Admin from './views/Admin';
 import Registration from "./views/Registration";
-import { Product } from './views/Product';
+// import { Product } from './views/Product';
 
 import Account from './views/Account';
 import Shopping from './views/Shopping';

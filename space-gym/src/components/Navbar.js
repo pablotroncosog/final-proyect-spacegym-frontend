@@ -16,7 +16,7 @@ export function Navbar() {
   <div className="row row-nav">
             <nav className="navbar " id="bg-navbar-1">
                 <div className="container-fluid d-flex justify-content-center">
-                    <a href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us78.gitpod.io/">    <button className="Button-Navbar mb-2">      <h3>Space Gym</h3> <div className="mb-2" style={{ fontSize: "40px", color: "#0076B8" }} > <FontAwesomeIcon icon={faDumbbell} /></div>  </button> </a>
+                    <Link to="/"><button className="Button-Navbar mb-2">  <h3>Space Gym</h3> <div className="mb-2" style={{ fontSize: "40px", color: "#0076B8" }} > <FontAwesomeIcon icon={faDumbbell} /></div></button></Link> 
 
                 </div>
             </nav>
@@ -28,7 +28,7 @@ export function Navbar() {
 
                 <div className="mt-2">
                     <div className="m-auto d-flex justify-content-center">
-                        <a class="Button-Main" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us78.gitpod.io/shopping"> <button className="Button-Main mb-2"> <FontAwesomeIcon icon={faCartShopping} />  </button> </a>
+                     <Link className="Button-Main" to="/shopping"><button className="Button-Main mb-2"> <FontAwesomeIcon icon={faCartShopping} /></button></Link>
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@ export function Navbar() {
                 <div className="mt-2">
                     <div className="d-flex justify-content-center">
 
-                        <a href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us78.gitpod.io/registration">    <button className="Button-Main mb-2"> Registrate    </button> </a>
+                        <Link to="/registration"><button className="Button-Main mb-2"> Registrate</button></Link>
                     </div>
                 </div>
 
@@ -64,7 +64,7 @@ export function Navbar() {
             <div className="col-lg-1 col-xs-12 col-md-6">
                 <div className="mt-2">
                     <div className="d-flex justify-content-center">
-                        <a href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us78.gitpod.io/login">    <button className="Button-Main mb-2"> Iniciar <FontAwesomeIcon icon={faUser} />   </button> </a>
+                    <Link to="/login"><button className="Button-Main mb-2">Iniciar<FontAwesomeIcon icon={faUser} /></button></Link>
                     </div>
                 </div>
             </div>
