@@ -7,10 +7,10 @@ import { useContext, useEffect } from "react";
 const Account = () => {
 
     const { store, actions } = useContext(Context);
-    useEffect(() => {
+   /*  useEffect(() => {
         actions.getUsers()
     }, [])
-
+ */
 
 
     return (

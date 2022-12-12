@@ -8,7 +8,6 @@ import remo from "../images/remo.jpg"
 import aros from "../images/Aros.jpg"
 import MMA from "../images/MMA.jpg"
 import Yoga from "../images/Yoga.jpg"
-import Offerts from "./Offerts";
 import { useNavigate } from "react-router-dom";
 
 export function Main() {
@@ -59,7 +58,7 @@ export function Main() {
            
             <div className="col-2 mt-3 mb-2">  </div>
         </div>
-        <Offerts />
+
     </div>
 };
 

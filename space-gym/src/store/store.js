@@ -8,42 +8,22 @@ export const getState = ({ getActions, getStore, setStore}) => {
            dataUser: [],
            productbycategory: []
         },
-        actions: {
-
-          
-           
-            getProducts: () => {
-              fetch("https://8080-pablotronco-finalproyec-r5i5o0okka4.ws-us77.gitpod.io/products")
-
-
-              .then((response) => response.json())
-              .then(data => setStore({
-                products: data,
-              }))
-              .catch(error => console.log(error))
-            },
-
+        actions: {           
             getproductbycategory: () => { 
               fetch("https://8080-pablotronco-finalproyec-pektzvt3obn.ws-us78.gitpod.io/productbycategory")
               .then((response) => response.json())
               .then(data => setStore({
                 productbycategory: data,
               }))
-              .catch(error => console.log(error))
-                
+              .catch(error => console.log(error)) 
             },
-
-
             getAdmin: () => { 
-
               fetch("https://8080-pablotronco-finalproyec-pektzvt3obn.ws-us78.gitpod.io/admin")
- 
               .then((response) => response.json())
               .then(data => setStore({
                 admin: data,
               }))
-              .catch(error => console.log(error))
-                
+              .catch(error => console.log(error))  
             },
             getUsers: () => { 
 
@@ -52,7 +32,7 @@ export const getState = ({ getActions, getStore, setStore}) => {
           
               .then((response) => response.json())
               .then(data => setStore({
-                users: data,
+                users: data.data,
               }))
               .catch(error => console.log(error))
                 
