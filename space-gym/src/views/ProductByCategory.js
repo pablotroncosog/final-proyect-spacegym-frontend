@@ -1,8 +1,7 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css"
 import placeholderImg from "../images/placeholder-image.png"
-import { Context } from "../store/Context";
 
 
 
@@ -16,8 +15,8 @@ export function ProductByCategory() {
         getProductByCategory(id)
     }, [])
 
-    function getProductByCategory(id) {
-        fetch("https://8080-pablotronco-finalproyec-pektzvt3obn.ws-us78.gitpod.io/product/category/" + id)
+    function getProductByCategory(idp) {
+        fetch("https://8080-pablotronco-finalproyec-pektzvt3obn.ws-us78.gitpod.io/product/" + idp)
             .then((response) => response.json())
             .then((data) => 
 
