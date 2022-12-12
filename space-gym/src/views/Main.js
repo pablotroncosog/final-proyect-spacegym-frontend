@@ -52,8 +52,11 @@ export function Main() {
 
         <div className="row mt-3  mb-2" id="container-main-2">
             <div className="col-2 mt-3  mb-2">    </div>
+
             <div className="col-4 mt-3  mb-2">    <img onClick={() => navigate("/productbycategory/4")} src={aros} className="d-block w-100 img-fluid " alt="..." />   </div>
             <div className="col-4 mt-3  mb-2">     <img onClick={() => navigate("/productbycategory/3")} src={MMA} className="d-block w-100 img-fluid  col-4 mt-3  mb-2 " alt="..." />   <img onClick={() => navigate("/productbycategory/2")} src={Yoga} className="d-block w-100 img-fluid col-4 mt-3  mb-2 " alt="..." />  </div>
+
+           
             <div className="col-2 mt-3 mb-2">  </div>
         </div>
         <Offerts />

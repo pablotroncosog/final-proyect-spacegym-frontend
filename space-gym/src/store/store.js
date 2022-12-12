@@ -9,8 +9,13 @@ export const getState = ({ getActions, getStore, setStore}) => {
            productbycategory: []
         },
         actions: {
-            getCharacters: () => {
-              fetch("https://8080-pablotronco-finalproyec-pektzvt3obn.ws-us78.gitpod.io/products")   
+
+          
+           
+            getProducts: () => {
+              fetch("https://8080-pablotronco-finalproyec-r5i5o0okka4.ws-us77.gitpod.io/products")
+
+
               .then((response) => response.json())
               .then(data => setStore({
                 products: data,
@@ -30,7 +35,9 @@ export const getState = ({ getActions, getStore, setStore}) => {
 
 
             getAdmin: () => { 
+
               fetch("https://8080-pablotronco-finalproyec-pektzvt3obn.ws-us78.gitpod.io/admin")
+ 
               .then((response) => response.json())
               .then(data => setStore({
                 admin: data,
@@ -38,9 +45,11 @@ export const getState = ({ getActions, getStore, setStore}) => {
               .catch(error => console.log(error))
                 
             },
-            
             getUsers: () => { 
+
               fetch("https://8080-pablotronco-finalproyec-pektzvt3obn.ws-us78.gitpod.io/users")
+
+          
               .then((response) => response.json())
               .then(data => setStore({
                 users: data,
@@ -48,9 +57,11 @@ export const getState = ({ getActions, getStore, setStore}) => {
               .catch(error => console.log(error))
                 
             },
-            postLogin: (dataUsers) => { 
+            postLogin: (dataUsers, navigate) => { 
               console.log(dataUsers);
+
               fetch("https://8080-4geeksacademy-htmlhello-pektzvt3obn.ws-us78.gitpod.io/login",
+
                {
                 method: 'POST',
                 headers: {
@@ -61,15 +72,17 @@ export const getState = ({ getActions, getStore, setStore}) => {
               .then((response) => response.json())
               .then(data => { 
                 setStore({ dataUsers: data, })
+                navigate("/admin")
                 localStorage.setItem('infoLogin', JSON.stringify(data));
               })
               .catch(error => console.log(error))
-
                 
             },
             postRegistration: (dataUsers) => { 
 
+
               fetch("https://8080-4geeksacademy-htmlhello-pektzvt3obn.ws-us78.gitpod.io/registration", {
+
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json'
@@ -81,13 +94,7 @@ export const getState = ({ getActions, getStore, setStore}) => {
                 dataUsers: data,
               }))
               .catch(error => console.log(error))
-
-                
             }
-
-
         }
-        
-
     }
 } 

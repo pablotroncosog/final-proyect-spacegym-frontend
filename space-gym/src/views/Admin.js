@@ -11,7 +11,7 @@ export function Admin() {
         formData.append("file", inputFiles[0]);
         console.log(formData.get("file"));
         fetch(
-            "https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us77.gitpod.io/upload_image",
+            "https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us78.gitpod.io/upload_image",
             {
                 method: "POST",
                 body: formData,
@@ -27,38 +27,69 @@ export function Admin() {
     };
 
 
-
-
-
     return (
-        <div>
+        <div className="container-fluid">
 
-            <div className="col-md-12">
-                <div className="my-8 mb-5">
-                    <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Descripcion del Producto" rows="3"></textarea>
-                </div>
-            </div>
+            <div className="row">
+                <div className="col-12 text-center"> <div className="container-fluid"> <h1> Vender un producto </h1>  </div>   </div>
+                <div className="col-4  text-center">
 
-
-            <div className="col-md-12">
-                <div className="my-8 mb-5">
+                    <button type="button" className="button-admin mx-auto" data-bs-toggle="button">Nombre del producto</button>
+                    <input
+                        type="text"
+                        /*  onChange={onChange} */
+                        className="form-control mt-1 mb-4"
+                        placeholder="Nombre"
+                        name="name"
+                    />
+                    <button type="button" class="button-admin" data-bs-toggle="button">Precio</button>
+                    <input
+                        type="text"
+                        /*  onChange={onChange} */
+                        className="form-control mt-1 mb-4"
+                        placeholder="¿Cuanto cuesta tu producto?"
+                        name="name"
+                    />
                     <select className="form-select" aria-label="Default select example">
                         <option selected>Selecciona la Categoria</option>
                         <option value="gym">Gym</option>
                         <option value="yoga">Yoga</option>
                         <option value="combate">Combate</option>
-                        <option value="gimnasia">Gimnasia</option>
                     </select>
+
                 </div>
-            </div>
 
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button className="btn btn-primary me-md-2" type="button">Subir Publicacion</button>
-                <button className="btn btn-primary" type="button">Eliminar Publicacion</button>
-                <button className="btn btn-primary" type="button">Editar Publicacion</button>
-            </div>
+                <div className="col-4 text-center ">
+                <div className="card mb-3 m-auto" style={{ maxWidth: "540px" }}>
+                    <form onSubmit={handleSubmit}>
+                        <label for="avatar">Imagen de referencia:</label>
+                        <input
+                            type="file"
+                            id="avatar"
+                            name="avatar"
+                            onChange={handleChange}
+                            accept="image/png, image/jpeg"></input>
+                        <button className="btn btn-primary" type="submit">SUBIR IMAGEN</button>
+                    </form>
+                </div>
+                </div>
 
-        </div >   
+         
+                <button type="button" class="btn-lg button-admin" data-bs-toggle="button">Descripción de producto</button>
+                <input
+                    type="text"
+                    /*  onChange={onChange} */
+                    className="form-control mt-1"
+                    placeholder="¿Qué quieres vender?"
+                    name="name"
+                />
+
+            </div>
+            <div className="col-4 text-center d-flex">
+                <button type="button" class="btn-lg button-admin" data-bs-toggle="button">Subir Producto</button>
+            </div>
+        </div>
+
 
     )
 

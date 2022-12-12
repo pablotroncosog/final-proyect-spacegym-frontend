@@ -23,7 +23,7 @@ const Registration = () => {
   }
 
 
-  console.log("probando info", info);
+   console.log("probando info", info);
 
 
   return (

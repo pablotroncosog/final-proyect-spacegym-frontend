@@ -1,8 +1,18 @@
 import React from "react";
 import '../styles/Account.css';
+import { Context } from "../store/Context"
+import { useContext, useEffect } from "react";
 
 
 const Account = () => {
+
+    const { store, actions } = useContext(Context);
+    useEffect(() => {
+        actions.getUsers()
+    }, [])
+
+
+
     return (
         <div className="container-fluid">
 
@@ -11,10 +21,19 @@ const Account = () => {
                     <div className="col-4 d-flex justify-content-center">
                         <div className="mt-5">  <button className="button-edit"> Editar </button>  </div>
                     </div>
+
                     <div className="col-4 justify-content-between">
-                        <div className="container-profile mb-4">  <h4>Nombre</h4> </div>
-                        <div className="container-profile mb-4">  <h4>Correo</h4> </div>
-                    </div>
+                           {store.users.map((users) => {
+                                return (
+                                    <div>
+                                        <div className="container-profile mb-4">   <h5> {users.name} </h5>  </div>
+                                        <div className="container-profile mb-4">  <h3> {users.email} </h3> </div> 
+                                
+                                    </div>
+                                )
+                            })}
+                        </div>
+                        
                     <div className="col-4 justify-content-between">
                         <div> Nombre <input type="description" className="form-control" ></input> </div>
                         <div> Correo <input type="description" className="form-control" ></input> </div>
@@ -38,7 +57,7 @@ const Account = () => {
 
             <div class="d-grid gap-2 col-6 mx-auto mb-1">
                 <button class="button-history" type="button">Ver todas las ordenes</button>
-           
+
             </div>
 
         </div>
