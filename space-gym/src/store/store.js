@@ -10,7 +10,7 @@ export const getState = ({ getActions, getStore, setStore}) => {
         actions: {
            
             getProducts: () => {
-              fetch("https://8080-pablotronco-finalproyec-r5i5o0okka4.ws-us77.gitpod.io/products")
+              fetch("https://3000-pablotronco-finalproyec-sipk2h70htv.ws-us78.gitpod.io/products")
 
               .then((response) => response.json())
               .then(data => setStore({

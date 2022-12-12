@@ -71,11 +71,11 @@ export function Navbar() {
                                     <FontAwesomeIcon icon={faUser} />
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us78.gitpod.io/login"> Iniciar esión </a></li>
-                                    <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us78.gitpod.io/Account"> Mi perfil </a></li>
-                                    <li><a className="dropdown-item" href="https://3000-pablotronco-finalproyec-s7erupwgaxi.ws-us78.gitpod.io/admin"> Vender </a></li>
+                                    <li><Link className="dropdown-item" to="/login"> Iniciar esión </Link></li>
+                                    <li><Link className="dropdown-item" to="/Account"> Mi perfil </Link></li>
+                                    <li><Link className="dropdown-item" to="/admin"> Vender </Link></li>
                                     <li><div class="dropdown-divider"> </div> </li>
-                                    <li><a className="dropdown-item"> Cerrar sesión </a></li>
+                                    <li><Link className="dropdown-item"> Cerrar sesión </Link></li>
                                 </ul>
                             </div>
                         </div>
