@@ -2,28 +2,35 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css"
 import placeholderImg from "../images/placeholder-image.png"
-import Offerts from "./Offerts";
 
 
-export function Product() {
+
+export function ProductByCategory() {
 
     const { id } = useParams(); 
-    const [Product, SetProduct] = useState({})
+    const [productsByCategory, setProductsByCategory] = useState([])
 
     useEffect(() => {
-        getProductById(id)
+        console.log("useEffect")
+        getProductByCategory(id)
     }, [])
 
-    function getProductById(id) {
-        fetch("https://8080-pablotronco-finalproyec-r5i5o0okka4.ws-us77.gitpod.io/product/key/" + id)
+    function getProductByCategory(idp) {
+        fetch("https://8080-pablotronco-finalproyec-pektzvt3obn.ws-us78.gitpod.io/product/" + idp)
             .then((response) => response.json())
-            .then((data) => SetProduct(data.result))
+            .then((data) => 
+
+            {console.log(data);
+                setProductsByCategory(data)}
+            )
             .catch((error) => console.log(error));
     }
 
 
 
     return <div className="col-12">
+
+        {productsByCategory && productsByCategory.map((p,index)=>
         <div className="card mb-3">
             <div className="row g-0">
                 <div className="col-md-4">
@@ -31,15 +38,15 @@ export function Product() {
                 </div>
                 <div className="col-md-8"> 
                     <div className="card-body">
-                        <h5 className="card-title"> {Product.properties?.name}</h5>
-                        <p className="card-text">{Product.description}</p>
-                        <p className="card-text"><small className="text-muted">  {Product.properties?.price}</small></p>
+                        <h5 className="card-title"> {p.name}</h5>
+                        <p className="card-text">{p.description}</p>
+                        <p className="card-text"><small className="text-muted">  {p.price}</small></p>
                     </div>
                 </div>
             </div>
         </div>
-        <Offerts/>
+        )}
     </div>
 };
 
-export default Product
+export default ProductByCategory
