@@ -26,16 +26,12 @@ export const getState = ({ getActions, getStore, setStore}) => {
               .catch(error => console.log(error))  
             },
             getUsers: () => { 
-
               fetch("https://8080-pablotronco-finalproyec-pektzvt3obn.ws-us78.gitpod.io/users")
-
-          
               .then((response) => response.json())
               .then(data => setStore({
                 users: data.data,
               }))
               .catch(error => console.log(error))
-                
             },
             postLogin: (dataUsers, navigate) => { 
               console.log(dataUsers);
