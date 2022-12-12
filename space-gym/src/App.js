@@ -16,7 +16,7 @@ import Registration from "./views/Registration";
 
 import Account from './views/Account';
 import Shopping from './views/Shopping';
-import Combat from './views/Combat';
+import ProductByCategory from './views/ProductByCategory';
 
 
 
@@ -36,7 +36,7 @@ function App() {
          
           <Route path="/account" element={<Account />} />
           <Route path="/shopping" element={<Shopping/>} />
-          <Route path="/combat" element={<Combat/>} />
+          <Route path="/productbycategory/:id" element={<ProductByCategory/>} />
         </Routes>
       </BrowserRouter>
       </div> 
