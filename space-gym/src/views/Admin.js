@@ -25,7 +25,6 @@ export function Admin() {
         setInputFiles(e.target.files);
     };
 
-
     return (
         <div className="container-fluid">
             <div className="row">
@@ -44,12 +43,6 @@ export function Admin() {
                         </form>
                     </div>
                 </div>
-
-
-
-
-
-
 
                 <div className="col-4 mt-5  text-center">
                     <div class="card">
@@ -73,20 +66,6 @@ export function Admin() {
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                 <div className="col-4 mt-5 text-center">
                     <div class="card">
