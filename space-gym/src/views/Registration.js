@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import '../styles/Login.css';
 
 import { Context } from "../store/Context";
@@ -6,7 +7,7 @@ import { Context } from "../store/Context";
 
 const Registration = () => {
   const { store, actions } = useContext(Context)
-
+  const navigate = useNavigate()
   const [info, setInfo] = useState()
 
   const [checked, setChecked] = useState()
@@ -18,12 +19,12 @@ const Registration = () => {
 
     ev.preventDefault();
 
-    actions.postRegistration(info)
+    actions.postRegistration(info, navigate)
 
   }
 
 
-   console.log("probando info", info);
+  
 
 
   return (
@@ -56,6 +57,7 @@ const Registration = () => {
 
                 <div className="form-group mt-3">
                   <input
+                    name="password"
                     onChange={onChange}
                     type="password"
                     className="form-control mt-1"

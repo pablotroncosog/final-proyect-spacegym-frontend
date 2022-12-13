@@ -8,7 +8,25 @@ export const getState = ({ getActions, getStore, setStore}) => {
            dataUser: [],
            productbycategory: []
         },
+<<<<<<< HEAD
         actions: {           
+=======
+        actions: {
+
+          
+           
+            getProducts: () => {
+              fetch("https://3000-pablotronco-finalproyec-sipk2h70htv.ws-us78.gitpod.io/products")
+
+
+              .then((response) => response.json())
+              .then(data => setStore({
+                products: data,
+              }))
+              .catch(error => console.log(error))
+            },
+
+>>>>>>> 5342beb9fb6cb93eb42c47fd99c50893151e6ace
             getproductbycategory: () => { 
               fetch("https://8080-pablotronco-finalproyec-pektzvt3obn.ws-us78.gitpod.io/productbycategory")
               .then((response) => response.json())
@@ -36,7 +54,7 @@ export const getState = ({ getActions, getStore, setStore}) => {
             postLogin: (dataUsers, navigate) => { 
               console.log(dataUsers);
 
-              fetch("https://8080-4geeksacademy-htmlhello-pektzvt3obn.ws-us78.gitpod.io/login",
+              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us78.gitpod.io/login",
 
                {
                 method: 'POST',
@@ -54,10 +72,10 @@ export const getState = ({ getActions, getStore, setStore}) => {
               .catch(error => console.log(error))
                 
             },
-            postRegistration: (dataUsers) => { 
+            postRegistration: (dataUsers, navigate) => { 
 
 
-              fetch("https://8080-4geeksacademy-htmlhello-pektzvt3obn.ws-us78.gitpod.io/registration", {
+              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us78.gitpod.io/user", {
 
                 method: 'POST',
                 headers: {
@@ -66,9 +84,14 @@ export const getState = ({ getActions, getStore, setStore}) => {
                 },
                 body: JSON.stringify(dataUsers) } )
               .then((response) => response.json())
-              .then(data => setStore({
-                dataUsers: data,
-              }))
+              .then(data => {
+                setStore({
+                  dataUsers: data,
+                })
+                navigate("/login")
+
+              } )
+            
               .catch(error => console.log(error))
             }
         }

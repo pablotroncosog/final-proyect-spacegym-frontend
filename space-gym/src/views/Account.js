@@ -28,7 +28,6 @@ const Account = () => {
                                     <div>
                                         <div className="container-profile mb-4">   <h5> {users.name} </h5>  </div>
                                         <div className="container-profile mb-4">  <h3> {users.email} </h3> </div> 
-                                
                                     </div>
                                 )
                             })}

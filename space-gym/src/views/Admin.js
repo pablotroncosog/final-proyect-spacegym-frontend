@@ -20,7 +20,6 @@ export function Admin() {
             .then((res) => res.json())
             .then((data) => console.log(data))
             .catch((error) => console.log(error));
-
     };
     const handleChange = (e) => {
         setInputFiles(e.target.files);
@@ -29,11 +28,9 @@ export function Admin() {
 
     return (
         <div className="container-fluid">
-
             <div className="row">
                 <div className="col-12 text-center"> <div className="container-fluid"> <h1> Vender un producto </h1>  </div>   </div>
                 <div className="col-4  text-center">
-
                     <button type="button" className="button-admin mx-auto" data-bs-toggle="button">Nombre del producto</button>
                     <input
                         type="text"
@@ -56,25 +53,21 @@ export function Admin() {
                         <option value="yoga">Yoga</option>
                         <option value="combate">Combate</option>
                     </select>
-
                 </div>
-
                 <div className="col-4 text-center ">
-                <div className="card mb-3 m-auto" style={{ maxWidth: "540px" }}>
-                    <form onSubmit={handleSubmit}>
-                        <label for="avatar">Imagen de referencia:</label>
-                        <input
-                            type="file"
-                            id="avatar"
-                            name="avatar"
-                            onChange={handleChange}
-                            accept="image/png, image/jpeg"></input>
-                        <button className="btn btn-primary" type="submit">SUBIR IMAGEN</button>
-                    </form>
+                    <div className="card mb-3 m-auto" style={{ maxWidth: "540px" }}>
+                        <form onSubmit={handleSubmit}>
+                            <label for="avatar">Imagen de referencia:</label>
+                            <input
+                                type="file"
+                                id="avatar"
+                                name="avatar"
+                                onChange={handleChange}
+                                accept="image/png, image/jpeg"></input>
+                            <button className="btn btn-primary" type="submit">SUBIR IMAGEN</button>
+                        </form>
+                    </div>
                 </div>
-                </div>
-
-         
                 <button type="button" class="btn-lg button-admin" data-bs-toggle="button">Descripción de producto</button>
                 <input
                     type="text"
@@ -83,16 +76,12 @@ export function Admin() {
                     placeholder="¿Qué quieres vender?"
                     name="name"
                 />
-
             </div>
             <div className="col-4 text-center d-flex">
                 <button type="button" class="btn-lg button-admin" data-bs-toggle="button">Subir Producto</button>
             </div>
         </div>
-
-
     )
-
 }
 
 
