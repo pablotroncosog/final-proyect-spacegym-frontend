@@ -9,7 +9,7 @@ export const getState = ({ getActions, getStore, setStore}) => {
         },
         actions: {          
             getProducts: () => {
-              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us78.gitpod.io/products")
+              fetch("https://8080-pablotronco-finalproyec-0f2dqlb80h6.ws-us78.gitpod.io/products")
               .then((response) => response.json())
               .then(data => setStore({
                 products: data,
@@ -18,7 +18,7 @@ export const getState = ({ getActions, getStore, setStore}) => {
             },
 
             getproductbycategory: () => { 
-              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us78.gitpod.io/productbycategory")
+              fetch("https://8080-pablotronco-finalproyec-0f2dqlb80h6.ws-us78.gitpod.io/productbycategory")
               .then((response) => response.json())
               .then(data => setStore({
                 productbycategory: data,
