@@ -1,7 +1,6 @@
- import React, { useContext, useEffect, useState } from "react";
- import { useNavigate } from "react-router-dom";
+import React, { useContext, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Context } from "../store/Context";
-// import { View, StyleSheet, Button, Alert } from "react-native";
 import '../styles/Login.css';
 
 
