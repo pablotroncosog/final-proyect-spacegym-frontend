@@ -60,7 +60,7 @@ export const getState = ({ getActions, getStore, setStore}) => {
             postLogin: (dataUsers, navigate) => { 
               console.log(dataUsers);
 
-              fetch("https://8080-4geeksacademy-htmlhello-pektzvt3obn.ws-us78.gitpod.io/login",
+              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us78.gitpod.io/login",
 
                {
                 method: 'POST',
@@ -78,10 +78,10 @@ export const getState = ({ getActions, getStore, setStore}) => {
               .catch(error => console.log(error))
                 
             },
-            postRegistration: (dataUsers) => { 
+            postRegistration: (dataUsers, navigate) => { 
 
 
-              fetch("https://8080-4geeksacademy-htmlhello-pektzvt3obn.ws-us78.gitpod.io/registration", {
+              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us78.gitpod.io/user", {
 
                 method: 'POST',
                 headers: {
@@ -90,9 +90,14 @@ export const getState = ({ getActions, getStore, setStore}) => {
                 },
                 body: JSON.stringify(dataUsers) } )
               .then((response) => response.json())
-              .then(data => setStore({
-                dataUsers: data,
-              }))
+              .then(data => {
+                setStore({
+                  dataUsers: data,
+                })
+                navigate("/login")
+
+              } )
+            
               .catch(error => console.log(error))
             }
         }
