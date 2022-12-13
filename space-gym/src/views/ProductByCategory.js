@@ -26,8 +26,6 @@ export function ProductByCategory() {
             .catch((error) => console.log(error));
     }
 
-
-
     return <div className="col-12">
 
         {productsByCategory && productsByCategory.map((p,index)=>
