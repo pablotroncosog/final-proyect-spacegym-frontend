@@ -58,11 +58,7 @@ export function Main() {
            
             <div className="col-2 mt-3 mb-2">  </div>
         </div>
-<<<<<<< HEAD
-
-=======
      
->>>>>>> 5342beb9fb6cb93eb42c47fd99c50893151e6ace
     </div>
 };
 

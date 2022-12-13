@@ -72,11 +72,7 @@ export function Navbar() {
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li><Link className="dropdown-item" to="/login"> Iniciar esión </Link></li>
-<<<<<<< HEAD
-                                    <li><Link className="dropdown-item" to="/account"> Mi perfil </Link></li>
-=======
                                     <li><Link className="dropdown-item" to="/Account"> Mi perfil </Link></li>
->>>>>>> 5342beb9fb6cb93eb42c47fd99c50893151e6ace
                                     <li><Link className="dropdown-item" to="/admin"> Vender </Link></li>
                                     <li><div class="dropdown-divider"> </div> </li>
                                     <li><Link className="dropdown-item"> Cerrar sesión </Link></li>
