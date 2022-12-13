@@ -1,8 +1,9 @@
-import React from "react";
+import { React, useContext} from "react";
+import {Context} from "../store/Context"
 import "../styles/Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap/dist/js/bootstrap.js';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUser } from "@fortawesome/free-solid-svg-icons"
@@ -10,7 +11,12 @@ import { faCartShopping } from "@fortawesome/free-solid-svg-icons"
 import { faDumbbell } from "@fortawesome/free-solid-svg-icons"
 
 
+
 export function Navbar() {
+
+    const navigate= useNavigate()
+    const { store, actions } = useContext(Context);
+   
 
     return <div className="container-fluid ">
   <div className="row row-nav">
@@ -71,11 +77,11 @@ export function Navbar() {
                                     <FontAwesomeIcon icon={faUser} />
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><Link className="dropdown-item" to="/login"> Iniciar esión </Link></li>
+                                    <li><Link className="dropdown-item" to="/login"> Iniciar sesión </Link></li>
                                     <li><Link className="dropdown-item" to="/Account"> Mi perfil </Link></li>
                                     <li><Link className="dropdown-item" to="/admin"> Vender </Link></li>
                                     <li><div class="dropdown-divider"> </div> </li>
-                                    <li><Link className="dropdown-item"> Cerrar sesión </Link></li>
+                                    <li> <button onClick={()=> actions.logout(navigate)}  className="dropdown-item"> Cerrar sesión </button></li>
                                 </ul>
                             </div>
                         </div>
