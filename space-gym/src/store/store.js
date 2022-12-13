@@ -74,6 +74,22 @@ export const getState = ({ getActions, getStore, setStore}) => {
                 navigate("/login")
               } )
               .catch(error => console.log(error))
+            },
+            postProduct: (dataProduct, navigate) => { 
+              console.log(dataProduct);
+              fetch("https://8080-pablotronco-finalproyec-r5i5o0okka4.ws-us78.gitpod.io/product",
+               {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(dataProduct) } )
+              .then((response) => response.json())
+              .then(data => { 
+                setStore({ dataProduct: data, })
+                navigate("/")
+              })
+              .catch(error => console.log(error))  
             }
         }
     }
