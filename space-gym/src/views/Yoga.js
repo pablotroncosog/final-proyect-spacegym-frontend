@@ -1,17 +1,16 @@
 import React from "react";
-import '../styles/Shopping.css';
+import '../styles/Account.css';
 
 
-const Shopping = () => {
+const Yoga = () => {
     return (
         <div className="container-fluid">
 
-   
-
+            
         </div>
 
 
     )
 }
 
-export default Shopping;
+export default Yoga;
