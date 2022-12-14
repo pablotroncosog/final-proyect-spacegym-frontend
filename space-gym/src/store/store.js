@@ -9,7 +9,7 @@ export const getState = ({ getActions, getStore, setStore}) => {
         },
         actions: {          
             getProducts: () => {
-              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us78.gitpod.io/products")
+              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us79.gitpod.io//products")
               .then((response) => response.json())
               .then(data => setStore({
                 products: data,
@@ -18,7 +18,7 @@ export const getState = ({ getActions, getStore, setStore}) => {
             },
 
             getproductbycategory: () => { 
-              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us78.gitpod.io/productbycategory")
+              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us79.gitpod.io/productbycategory")
               .then((response) => response.json())
               .then(data => setStore({
                 productbycategory: data,
@@ -26,7 +26,7 @@ export const getState = ({ getActions, getStore, setStore}) => {
               .catch(error => console.log(error)) 
             },
             getAdmin: () => { 
-              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us78.gitpod.io/admin")
+              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us79.gitpod.io/admin")
               .then((response) => response.json())
               .then(data => setStore({
                 admin: data,
@@ -34,16 +34,36 @@ export const getState = ({ getActions, getStore, setStore}) => {
               .catch(error => console.log(error))  
             },
             getUsers: () => { 
-              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us78.gitpod.io/users")
+              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us79.gitpod.io/users")
               .then((response) => response.json())
               .then(data => setStore({
                 users: data.data,
               }))
               .catch(error => console.log(error))
             },
+
+            getShopping: () => { 
+              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us79.gitpod.io/shopping")
+              .then((response) => response.json())
+              .then(data => setStore({
+                shopping: data.data,
+              }))
+              .catch(error => console.log(error))
+            },
+
+            getSale: () => { 
+              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us79.gitpod.io/sale")
+              .then((response) => response.json())
+              .then(data => setStore({
+                sale: data.data,
+              }))
+              .catch(error => console.log(error))
+            },
+
+
             postLogin: (dataUsers, navigate) => { 
               console.log(dataUsers);
-              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us78.gitpod.io/login",
+              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us79.gitpod.io/login",
                {
                 method: 'POST',
                 headers: {
@@ -68,7 +88,7 @@ export const getState = ({ getActions, getStore, setStore}) => {
 
 
             postRegistration: (dataUsers, navigate) => { 
-              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us78.gitpod.io/user", {
+              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us79.gitpod.io/user", {
 
                 method: 'POST',
                 headers: {
@@ -86,7 +106,7 @@ export const getState = ({ getActions, getStore, setStore}) => {
             },
             postProduct: (dataProduct, navigate) => { 
               console.log(dataProduct);
-              fetch("https://8080-pablotronco-finalproyec-r5i5o0okka4.ws-us78.gitpod.io/product",
+              fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us79.gitpod.io/product",
                {
                 method: 'POST',
                 headers: {
@@ -96,7 +116,7 @@ export const getState = ({ getActions, getStore, setStore}) => {
               .then((response) => response.json())
               .then(data => { 
                 setStore({ dataProduct: data, })
-                navigate("/")
+                navigate("/shopping")
               })
               .catch(error => console.log(error))  
             }

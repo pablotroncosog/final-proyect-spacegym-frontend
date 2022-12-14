@@ -16,7 +16,7 @@ export function ProductByCategory() {
     }, [])
 
     function getProductByCategory(idp) {
-        fetch("https://8080-pablotronco-finalproyec-pektzvt3obn.ws-us78.gitpod.io/product/" + idp)
+        fetch("https://8080-4geeksacademy-htmlhello-vsscjfnzcdo.ws-us79.gitpod.io//product/" + idp)
             .then((response) => response.json())
             .then((data) => 
 

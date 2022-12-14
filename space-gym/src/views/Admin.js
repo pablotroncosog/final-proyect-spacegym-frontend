@@ -27,7 +27,6 @@ export function Admin() {
         setInputFiles(e.target.files);
     }
 
-
     const { store, actions } = useContext(Context)
     const navigate = useNavigate()
     const [infoProduct, setProduct] = useState();
@@ -40,7 +39,7 @@ export function Admin() {
         actions.postProduct(infoProduct, navigate)
     };
      
-    console.log(infoProduct);
+    // console.log(infoProduct);
     
     return (
         <div className="container-fluid">
